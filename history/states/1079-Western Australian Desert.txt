@@ -7,16 +7,13 @@ state={
 		owner = AST
 		add_core_of = AST
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 0
 		}
-
 	}
-
 	provinces={
-		1498 2133 2177 2186 5170 8134 8155 10473 12904 12912 12926 
+		1498 2133 2177 2186 2201 5125 5170 5207 8134 8152 8155 8209 8247 10473 10937 10950 10958 11016 12904 12912 12926 12993 13133
 	}
-	manpower=2730
+	manpower=9430
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	impassable = yes

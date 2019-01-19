@@ -1,0 +1,19 @@
+state = {
+	id = 1304
+	name = "STATE_1304"
+
+	history = {
+		owner = SRI
+		add_core_of = SRI
+		buildings = {
+			infrastructure = 6
+		}
+	}
+
+	provinces = {
+		3885 13624
+	}
+	manpower=0 #646280
+	buildings_max_level_factor = 1
+	state_category = rural
+}
