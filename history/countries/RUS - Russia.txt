@@ -55,26 +55,26 @@ set_country_flag = no_LEC_profit_for_you
 country_event = { id = russia.1 days = 1 }
 country_event = { id = russia.5 days = 5 } #Kerensky assassination
 set_convoys = 60
-set_stability = 0.3
+set_stability = 0.4
 set_war_support = 0.2
 
 set_politics = {
 
 	parties = {
 		totalist = {
-			popularity = 1
+			popularity = 31
 		}
 		radical_socialist = {
-			popularity = 2
+			popularity = 14
 		}
 		syndicalist = {
-			popularity = 3
+			popularity = 0
 		}
 		social_democrat = {
 			popularity = 5
 		}
 		social_liberal = {
-			popularity = 20
+			popularity = 1
 		}
 		market_liberal = {
 			popularity = 6
@@ -89,11 +89,11 @@ set_politics = {
 			popularity = 13
 		}
 		national_populist = {
-			popularity = 32
+			popularity = 12
 		}
 	}
 
-	ruling_party = social_liberal
+	ruling_party = paternal_autocrat
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
@@ -151,9 +151,11 @@ ALO = {
 
 add_ideas = {
 	#medium_economy
-	soviet_worker_soldier
-	rus_divided_staff
-	rus_divided_marine
+	socialist_spectre
+	treaty_of_brest_litovsk
+	german_economic_dominance
+	impending_famine
+	literacy_issues
 	RUS_Pavel_N_Milyukov_hog_mli
 	RUS_Pyotr_B_Struve_for_sli
 	RUS_Nikolai_A_Maklakov_eco_pau
@@ -238,9 +240,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Lavr Kornilov"
-	desc = "POLITICS_LAVR_KORNILOV_DESC"
-	picture = "Portrait_Soviet_Lavr_Kornilov.tga"
+	name = "Anton Denikin"
+	desc = "POLITICS_ANTON_DENIKIN_DESC"
+	picture = "Portrait_Soviet_Anton_Iwanowitsch_Denikin.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 	traits = {
@@ -381,7 +383,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Mikhaïl Drozdovsky"
+	name = "Mikhail Drozdovsky"
 	id = 405
 	picture = "Portrait_Soviet_Mikhail_Drozdovsky.tga"
 	traits = {
@@ -495,40 +497,6 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Georgy Zhukov"
-	id = 457
-	picture = "Portrait_Russia_Gregory_Zhukov.tga"
-	traits = {
-		career_officer
-		brilliant_strategist
-		organizer
-		skilled_staffer
-	}
-	skill = 4
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 3
-
-}
-
-create_corps_commander = {
-	name = "Konstantin Rokossovsky"
-	picture = "Portrait_Russia_Konstantin_Rokossovsky.dds"
-	traits = {
-		brilliant_strategist
-		cavalry_leader
-		cavalry_officer
-	}
-	skill = 4
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
-
-}
-
-create_corps_commander = {
 	name = "Aleksander Kutepov"
 	id = 411
 	picture = "Portrait_Soviet_Aleksander_Kutepov.tga"
@@ -546,7 +514,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Mikhaïl Levitov"
+	name = "Mikhail Levitov"
 	id = 412
 	picture = "Portrait_Soviet_Mikhail_Levitov.tga"
 	traits = {
@@ -611,7 +579,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Nikolaï Timanovsky"
+	name = "Nikolai Timanovsky"
 	id = 417
 	picture = "Portrait_Soviet_Nikolai_Timanovsky.tga"
 	traits = {
@@ -728,22 +696,6 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Boris Shaposhnikov"
-	id = 451
-	picture = "Portrait_Soviet_Boris_Shaposhnikov.tga"
-	traits = {
-		career_officer
-		brilliant_strategist
-		skilled_staffer
-	}
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
 	name = "Yevgeny Miller"
 	picture = "Portrait_Soviet_Yevgeny_Miller.tga"
 	traits = {
@@ -843,14 +795,14 @@ create_navy_leader = {
 }
 
 create_navy_leader = {
-	name = "Mikhaïl Kedrov"
+	name = "Mikhail Kedrov"
 	picture = "Portrait_Russia_Mikhail_Kedrov.tga"
 	traits = { superior_tactician ironside }
 	skill = 3 #naval guy, don't patch
 }
 
 create_navy_leader = {
-	name = "Mikhaïl Berens"
+	name = "Mikhail Berens"
 	picture = "Portrait_Russia_Mikhail_Berens.tga"
 	traits = { air_controller }
 	skill = 2 #naval guy, don't patch
