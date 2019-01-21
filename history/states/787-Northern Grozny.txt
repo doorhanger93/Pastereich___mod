@@ -9,12 +9,11 @@ state={
 	
 
 	history={
-		owner = DKB
+		owner = RUS
+		add_core_of = RUS
 		buildings = {
 			infrastructure = 4
 		}
-		
-		owner = DKB
 	}
 
 	provinces={

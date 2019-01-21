@@ -1,0 +1,28 @@
+state = {
+	id = 1309
+	name = "STATE_1309"
+	manpower = 234100 #Added 20k as an estimate of surrounding areas within concession zone.
+
+	state_category = town
+
+	history = {
+		owner = GER
+		buildings = {
+			dockyard = 2
+			infrastructure = 4
+			4205 = {
+				naval_base = 3
+				bunker = 2
+				coastal_bunker = 2
+			}
+		}
+		victory_points = {
+			4205 2 # Weihaiwei
+		}
+		add_core_of = QIE
+	}
+
+	provinces = {
+		4205
+	}
+}

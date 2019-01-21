@@ -1,0 +1,16 @@
+state = { #Jinxi #Western Shanxi
+	id = 1306
+	name = "STATE_1306"
+	state_category = rural
+	history = {
+		owner = SHX
+		add_core_of = SHX
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces = {
+		1034 1531 1575 4074 7571 4634 10367 10507 12300
+	}
+	manpower = 453500
+}

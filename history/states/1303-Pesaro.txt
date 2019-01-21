@@ -1,0 +1,23 @@
+state = {
+	id = 1303
+	name = "STATE_1303"
+	manpower=0 #1214500
+
+	state_category = town
+
+	history = {
+		owner = SRI
+		add_core_of = SRI
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			11861 = {
+				bunker = 1
+			}
+		}
+	}
+
+	provinces = {
+		967 11861
+	}
+}

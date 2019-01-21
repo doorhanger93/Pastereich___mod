@@ -323,9 +323,8 @@ focus_tree = {
 		prerequisite = { focus = AST_call_for_unity }
 		prerequisite = { focus = AST_labour_resolved }
 		prerequisite = { focus = AST_maori_act }
-		mutually_exclusive = { focus = AST_australasian_republic }
 		relative_position_id = AST_democracy_prevails
-		x = -1
+		x = 0
 		y = 4
 
 		ai_will_do = {
@@ -383,7 +382,7 @@ focus_tree = {
 			focus = AST_long_live_the_king
 		}
 		relative_position_id = AST_democracy_prevails
-		x = -1
+		x = 0
 		y = 5
 
 		ai_will_do = {
@@ -416,102 +415,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AST_australasian_republic
-		icon = GFX_goal_government_icon
-		cost = 8.00
-		available = {
-			has_war = no
-			is_subject = no
-			has_democratic_government = yes
-		}
-		prerequisite = { focus = AST_call_for_unity }
-		prerequisite = { focus = AST_labour_resolved }
-		prerequisite = { focus = AST_maori_act }
-		mutually_exclusive = { focus = AST_long_live_the_king }
-		relative_position_id = AST_democracy_prevails
-		x = 1
-		y = 4
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					has_government = authoritarian_democrat
-					has_government = social_conservative
-				}
-			}
-			modifier = {
-				factor = 3
-				CAN = {
-					is_faction_leader = yes
-					is_in_faction_with = AST
-					has_authoritarian_government = yes
-				}
-			}
-			modifier = {
-				factor = 3
-				GBR = {
-					is_faction_leader = yes
-					is_in_faction_with = AST
-					has_authoritarian_government = yes
-				}
-			}
-		}
-
-		available_if_capitulated = no
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus AST_australasian_republic"
-			if = {
-				limit = {
-					OR = {
-						CAN = {
-							is_faction_leader = yes
-							is_in_faction_with = AST
-						}
-						GBR = {
-							is_faction_leader = yes
-							is_in_faction_with = AST
-						}
-					}
-				}
-				country_event = austral.61
-				else = { country_event = austral.67 }
-			}
-		}
-	}
-
-	focus = {
-		id = AST_new_constitution
-		icon = GFX_goal_constitutional_guarantees
-		cost = 8.00
-		available = {
-			has_democratic_government = yes
-		}
-		prerequisite = {
-			focus = AST_australasian_republic
-		}
-		relative_position_id = AST_democracy_prevails
-		x = 1
-		y = 5
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available_if_capitulated = no
-		cancel_if_invalid = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus AST_new_constitution"
-			add_stability = 0.10
-			add_political_power = 100
-		}
-	}
-
-	focus = {
 		id = AST_we_march_forward
 		icon = GFX_goal_australasia_flag
 		cost = 10.00
@@ -519,7 +422,6 @@ focus_tree = {
 			has_democratic_government = yes
 		}
 		prerequisite = {
-			focus = AST_new_constitution
 			focus = AST_increase_british_ties
 		}
 		relative_position_id = AST_democracy_prevails
