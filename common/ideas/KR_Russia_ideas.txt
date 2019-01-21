@@ -7,12 +7,46 @@ ideas = {
 	##############
 
 	country = {
-		soviet_worker_soldier = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea soviet_worker_soldier"}
+		socialist_spectre = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea socialist_spectre"}
 			modifier = {
-
+				stability_factor = -0.25
 			}
-			picture = trotskyite_plot
+			picture = FRA_communard_spirit
+		}
+		
+		treaty_of_brest_litovsk = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea treaty_of_brest_litovsk"}
+			modifier = {
+				stability_factor = -0.10
+			}
+			picture = LIB_broken_center
+		}
+		
+		german_economic_dominance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea treaty_of_brest_litovsk"}
+			modifier = {
+				min_export = 0.2
+				consumer_goods_factor = 0.1
+				stability_factor = -0.05
+			}
+			picture = LIB_ger_bailout
+		}
+		
+		impending_famine = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea treaty_of_brest_litovsk"}
+			modifier = {
+				
+			}
+			picture = generic_agrarian_society
+		}
+		
+		literacy_issues = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea treaty_of_brest_litovsk"}
+			modifier = {
+				research_time_factor = 0.1
+			}
+			picture = KTG_Technological_Backwater
 		}
 
 		project_exeeded = {
