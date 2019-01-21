@@ -4,7 +4,7 @@ state={
 	name="STATE_274"
 
 	history={
-		owner = MAF
+		owner = GHA
 		add_core_of = GHA
 		victory_points = {
 			14070 1 
