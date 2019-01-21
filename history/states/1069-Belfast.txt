@@ -6,7 +6,7 @@ state={
 	}
 	history={
 		owner = IRE
-		add_core_of = IRE
+		add_core_of = GBR
 		victory_points = {
 			3379 10 
 		}

@@ -160,27 +160,26 @@ create_country_leader = {# Oswald Mosley
 	ideology = totalist_subtype
 	traits = { }
 }
-create_country_leader = {# Niclas Y Glais
-	name = "Ramsay MacDonald"
-	desc = "POLITICS_RAMSAY_MACDONALD_DESC"
-	picture = "Portrait_England_Ramsay_MacDonald.tga"
+create_country_leader = {# Oswald Mosley
+	name = "Oswald Mosley"
+	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+	picture = "Portrait_England_Oswald_Mosley.tga"
 	expire = "1965.1.1"
 	ideology = radical_socialist_subtype
 	traits = { }
 }
-# Put Horner here so we can retire Snowden as head of the Syndicalists even if Glais or Mosley win
 create_country_leader = {
-	name = "Arthur Horner"
-	desc = "POLITICS_ARTHUR_HORNER_DESC"
-	picture = "Portrait_England_Arthur_Horner.tga"
+	name = "Oswald Mosley"
+	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+	picture = "Portrait_England_Oswald_Mosley.tga"
 	expire = "1965.1.1"
 	ideology = syndicalist_subtype
 	traits = { }
 }
-create_country_leader = {# Philip Snowden
-	name = "Philip Snowden"
-	desc = "POLITICS_PHILIP_SNOWDEN_DESC"
-	picture = "Portrait_England_Philip_Snowden.tga"
+create_country_leader = {
+	name = "Oswald Mosley"
+	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+	picture = "Portrait_England_Oswald_Mosley.tga"
 	expire = "1965.1.1"
 	ideology = syndicalist_subtype
 	traits = {

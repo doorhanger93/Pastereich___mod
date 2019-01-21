@@ -135,7 +135,7 @@ create_country_leader = {# King Amadeo I
 	traits = { warrior_prince }
 }
 create_country_leader = {# King Amadeo I
-	name = "Amadeo I"
+	name = "Rock me Amadeus"
 	picture = "Portrait_SRD_King_Amedeo.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype

@@ -7,16 +7,15 @@ state={
 	}
 	history={
 		owner = ENG
+		add_core_of = ENG
+		add_core_of = GBR
 		victory_points = {
 			9364 1
 		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
-
 		}
-		add_core_of = ENG
-
 	}
 	manpower=552000
 	state_category = town

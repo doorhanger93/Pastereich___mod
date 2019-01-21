@@ -8,14 +8,12 @@ state={
 		oil=1
 	}
 	history={
-		owner = BOL
+		owner = PAR
+		add_core_of = PAR
+		add_claim_by = BOL
 		buildings = {
 			infrastructure = 3
-
 		}
-		add_core_of = BOL
-		add_core_of = PAR
-
 	}
 	provinces={
 		2209 10973 13245 13682 13683 13684 13686 13687 13688 13691 13692 

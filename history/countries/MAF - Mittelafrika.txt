@@ -124,6 +124,19 @@ set_politics = {
 	elections_allowed = no
 }
 
+set_autonomy = {
+	target = KEN
+	autonomous_state = kr_autonomous_puppet
+}
+set_autonomy = {
+	target = NGR
+	autonomous_state = kr_default_puppet
+}
+set_autonomy = {
+	target = GHA
+	autonomous_state = kr_default_puppet
+}
+
 country_event = { id = mittel.1 days = 1 }
 
 set_country_flag = MAF_NKR
