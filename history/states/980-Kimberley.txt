@@ -2,7 +2,7 @@
 state={
 	id=980
 	name="STATE_980"
-	manpower = 6700
+	manpower = 4112
 	
 	state_category = wasteland
 
@@ -15,7 +15,8 @@ state={
 	}
 
 	provinces={
-		2201 5207 8209 8247 10937 10958 11016
+		2223 8237 10979 11013 12992 12936 13132
 	}
+	impassable = yes
 }
 
