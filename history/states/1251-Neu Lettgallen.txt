@@ -5,8 +5,8 @@ state={
 		15171 
 	}
 	history={
-		owner = BAT
-		add_core_of = BAT
+		owner = RUS
+		add_core_of = RUS
 		add_core_of = LAT
 		buildings = {
 			infrastructure = 3

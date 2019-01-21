@@ -4,8 +4,8 @@ state={
 	name="STATE_880"
 
 	history={
-		owner = BAT
-		add_core_of = BAT
+		owner = RUS
+		add_core_of = RUS
 		add_core_of = LAT
 		victory_points = {
 			310 3

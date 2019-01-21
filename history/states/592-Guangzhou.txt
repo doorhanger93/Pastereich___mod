@@ -1,4 +1,3 @@
-
 state={
 	id=592
 	name="STATE_592"
@@ -30,9 +29,9 @@ state={
 	}
 
 	provinces={
-		1047 1087 1131 1187 4092 7039 7152 9963 10105 11938 11941 12077 
+		1087 1131 1187 4092 7039 7152 9963 10105 11938 11941 12077 
 	}
-	manpower=17835200
+	manpower=16761200
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

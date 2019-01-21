@@ -10,8 +10,8 @@ state={
 	}
 
 	history={
-		owner = DKB
-		add_core_of = DKB
+		owner = RUS
+		add_core_of = RUS
 		buildings = {
 			infrastructure = 4
 			air_base = 2
