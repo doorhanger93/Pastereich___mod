@@ -13,6 +13,7 @@ state={
 	history={
 		owner = DKB
 		add_core_of = DKB
+		add_claim_by = RUS
 		buildings = {
 			infrastructure = 4
 		arms_factory = 1
