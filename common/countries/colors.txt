@@ -272,10 +272,6 @@ ENG = {
 	color = rgb { 208 12 39 }
 	color_ui = rgb { 228 12 13 }
 }
-ENP = {
-	color = rgb { 152 129 123 }
-	color_ui = rgb { 152 129 123 }
-}
 ERT = {
 	color = rgb { 146 213 90 }
 	color_ui = rgb { 146 213 90 }
@@ -315,14 +311,6 @@ FRP = {
 GAB = {
 	color = rgb { 87 164 87 }
 	color_ui = rgb { 87 164 87 }
-}
-GAL = {
-	color = rgb { 205 38 38 }
-	color_ui = rgb { 205 38 38 }
-}
-GBP = {
-	color = rgb { 150 0 24 }
-	color_ui = rgb { 150 0 24 }
 }
 GBR = {
 	color = rgb { 150 0 24 }
@@ -676,10 +664,6 @@ PIR = {
 	color = rgb { 222 187 91 }
 	color_ui = rgb { 222 187 91 }
 }
-PLC = {
-	color = rgb { 176  81  111 }
-	color_ui = rgb { 215 100 124 }
-}
 POL = {
 	color = rgb { 197 92 106 }
 	color_ui = rgb { 255 120 138 }
@@ -687,14 +671,6 @@ POL = {
 POR = {
 	color = rgb { 0 147 175 }
 	color_ui = rgb { 0 147 175 }
-}
-PRC = {
-	color = rgb { 176 0 0 }
-	color_ui = rgb { 176 0 0 }
-}
-PRC = {
-	color = rgb { 222 41 16 }
-	color_ui = rgb { 222 41 16 }
 }
 PRF = {
 	color = rgb { 255 128 0 }
@@ -715,10 +691,6 @@ QIE = {
 QUE = {
 	color = rgb { 19 83 180 }
 	color_ui = rgb { 19 83 180 }
-}
-RAJ = {
-	color = rgb { 170 10 10 }
-	color_ui = rgb { 200 10 10 }
 }
 RJM = {
 	color = rgb { 128 255 128 }
@@ -920,10 +892,6 @@ UKR = {
 	color = rgb { 153 61 0 }
 	color_ui = rgb { 153 61 0 }
 }
-ULS = {
-	color = rgb { 255 108 0 }
-	color_ui = rgb { 218 92 0 }
-}
 URG = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }
@@ -955,10 +923,6 @@ VIN = {
 WAD = {
 	color = rgb { 176 97 77 }
 	color_ui = rgb { 176 97 77 }
-}
-WAL = {
-	color = rgb { 0 171 57 }
-	color_ui = rgb { 0 171 57 }
 }
 WGR = {
 	color = rgb { 0 146 51 }

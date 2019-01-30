@@ -80,13 +80,18 @@ set_technology = {
 
 add_ideas = {
 	#medium_economy
-
+	limited_exports
+	ENG_republic_idea
+	ENG_monoff_idea
+	ENG_econ_idea
+	ENG_engire_idea
 	ENG_Arthur_Horner_hog_syn
 	ENG_Niclas_y_Glais_for_rso
 	ENG_Oswald_Mosley_eco_tot
 	ENG_Helen_Crawfurd_sec_rso
 }
 
+add_opinion_modifier = { target = IRE modifier = ENG_IRE_friends }
 add_opinion_modifier = { target = GER modifier = embargo }
 add_opinion_modifier = { target = CAN modifier = embargo }
 add_opinion_modifier = { target = AST modifier = embargo }
@@ -113,8 +118,11 @@ set_convoys = 200
 set_politics = {
 
 	parties = {
-		totalist = {
+		marxist = {
 			popularity = 5
+		}
+		totalist = {
+			popularity = 0
 		}
 		syndicalist = {
 			popularity = 2

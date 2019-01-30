@@ -29,6 +29,9 @@ diplomatic_relation = { country = AOG relation = non_aggression_pact }
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 0
 		}

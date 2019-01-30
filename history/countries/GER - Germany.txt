@@ -129,6 +129,9 @@ add_opinion_modifier = { target = HAI modifier = HAI_foreign_council }
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 1
 		}
@@ -208,6 +211,10 @@ set_autonomy = {
 	target = UKR
 	autonomous_state = kr_autonomous_puppet
 }
+set_autonomy = {
+	target = ROM
+	autonomous_state = kr_autonomous_puppet
+}	
 set_autonomy = {
 	target = GEO
 	autonomous_state = kr_autonomous_puppet

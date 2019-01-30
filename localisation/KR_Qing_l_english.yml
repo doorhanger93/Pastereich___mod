@@ -144,8 +144,8 @@ GER_NO_NEW_TRE_QIE:0 "No New Qing-German Treaty"
 QIE_GER_SANC:0 "German Economic Sanctions"
 QIE_NEW_MARKETS:0 "Searching New Markets"
 united_empire:0 "A United Empire"
-QIE_warlord:0 "poopoo peepee"
-QIE_warlord_desc:0 "lol"
+QIE_manpower:0 "poopoo peepee"
+QIE_manpower_desc:0 "lol"
 
 ### Parties ###
 QIE_totalist_party:0 "CPP"

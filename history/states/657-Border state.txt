@@ -11,11 +11,12 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = RUS
-					add_core_of = RUS
-#		victory_points = {
-#			7616 1 #  Blagovechtchensk
-#		}
+		owner = TRM
+		add_core_of = TRM
+		add_claim_by = RUS
+		victory_points = {
+			7763 1
+		}
 		buildings = {
 			infrastructure = 3
 			air_base = 2

@@ -696,8 +696,6 @@ focus_tree = {
 				tooltip = ire.uq.tooltip
 				has_country_flag = IRE_unionist_question }
 		}
-		available = {
-			NOT = { country_exists = ULS } }
 		prerequisite = { focus = IRE_QOTD }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus IRE_SOU"
@@ -719,8 +717,6 @@ focus_tree = {
 				tooltip = ire.uq.tooltip
 				has_country_flag = IRE_unionist_question }
 		}
-		available = {
-			NOT = { country_exists = ULS } }
 		prerequisite = { focus = IRE_SOU }
 		mutually_exclusive = { focus = IRE_NEGOTIATE }
 		completion_reward = {
@@ -746,8 +742,6 @@ focus_tree = {
 				tooltip = ire.uq.tooltip
 				has_country_flag = IRE_unionist_question }
 		}
-		available = {
-			NOT = { country_exists = ULS } }
 		prerequisite = { focus = IRE_REPRESS }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus IRE_RTUG"
@@ -776,8 +770,6 @@ focus_tree = {
 				tooltip = ire.uq.tooltip
 				has_country_flag = IRE_unionist_question }
 		}
-		available = {
-			NOT = { country_exists = ULS } }
 		available = { IRE = { divisions_in_state = { state = 119 size > 9 } } }
 		prerequisite = { focus = IRE_RTUG }
 		completion_reward = {
@@ -805,8 +797,6 @@ focus_tree = {
 				tooltip = ire.uq.tooltip
 				has_country_flag = IRE_unionist_question }
 		}
-		available = {
-			NOT = { country_exists = ULS } }
 		prerequisite = { focus = IRE_REOCCBF }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus IRE_KILLUVF"
@@ -832,8 +822,6 @@ focus_tree = {
 				tooltip = ire.uq.tooltip
 				has_country_flag = IRE_unionist_question }
 		}
-		available = {
-			NOT = { country_exists = ULS } }
 		prerequisite = { focus = IRE_SOU }
 		mutually_exclusive = { focus = IRE_REPRESS }
 		completion_reward = {
@@ -859,8 +847,7 @@ focus_tree = {
 				tooltip = ire.uq.tooltip
 				has_country_flag = IRE_unionist_question }
 		}
-		available = {
-			NOT = { country_exists = ULS } }
+
 		prerequisite = { focus = IRE_NEGOTIATE }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus IRE_RECUS"
@@ -887,8 +874,7 @@ focus_tree = {
 				tooltip = ire.uq.tooltip
 				has_country_flag = IRE_unionist_question }
 		}
-		available = {
-			NOT = { country_exists = ULS } }
+
 		prerequisite = { focus = IRE_RECUS }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus IRE_CUC"
@@ -919,8 +905,7 @@ focus_tree = {
 				tooltip = ire.uq.tooltip
 				has_country_flag = IRE_unionist_question }
 		}
-		available = {
-			NOT = { country_exists = ULS } }
+
 		prerequisite = { focus = IRE_CUC }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus IRE_EIRENUA"

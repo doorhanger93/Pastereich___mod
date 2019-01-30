@@ -7,13 +7,12 @@ state={
 	}
 
 	history={
-		owner = RUS
+		owner = TRM
+		add_core_of = TRM
+		add_claim_by = RUS
 		buildings = {
 			infrastructure = 2
-
 		}
-		add_core_of = RUS
-
 	}
 
 	provinces={

@@ -306,7 +306,6 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = LIT
-			tag = PLC
 		}
 		11 = {
 			is_controlled_by = ROOT
@@ -539,7 +538,6 @@ country_event = {
 		OR = {
 			tag = LIT
 			tag = LAT
-			tag = PLC
 		}
 		12 = {
 			is_controlled_by = ROOT
@@ -3879,7 +3877,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = LIT
-			tag = PLC
+			#tag = PLC
 		}
 		188 = {
 			is_controlled_by = ROOT
@@ -3940,7 +3938,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = LIT
-			tag = PLC
+			#tag = PLC
 		}
 		189 = {
 			is_controlled_by = ROOT
@@ -4131,7 +4129,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = LIT
-			tag = PLC
+			#tag = PLC
 			tag = LAT
 		}
 		190 = {
@@ -10511,7 +10509,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = LIT
-			tag = PLC
+			#tag = PLC
 		}
 		880 = {
 			is_controlled_by = ROOT

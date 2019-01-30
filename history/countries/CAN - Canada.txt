@@ -93,6 +93,9 @@ set_country_flag = LEC_profit_for_you
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 0
 		}

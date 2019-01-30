@@ -10,6 +10,15 @@
 increase_ruling_party_popularity_by_5 = {
 	if = {
 		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = 0.05
+		}
+	}
+	if = {
+		limit = {
 			has_government = totalist
 		}
 		add_popularity = {
@@ -101,6 +110,15 @@ increase_ruling_party_popularity_by_5 = {
 }
 
 increase_ruling_party_popularity_by_10 = {
+	if = {
+		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = 0.10
+		}
+	}
 	if = {
 		limit = {
 			has_government = totalist
@@ -196,6 +214,15 @@ increase_ruling_party_popularity_by_10 = {
 increase_ruling_party_popularity_by_15 = {
 	if = {
 		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = 0.15
+		}
+	}
+	if = {
+		limit = {
 			has_government = totalist
 		}
 		add_popularity = {
@@ -287,6 +314,15 @@ increase_ruling_party_popularity_by_15 = {
 }
 
 increase_ruling_party_popularity_by_20 = {
+	if = {
+		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = 0.20
+		}
+	}
 	if = {
 		limit = {
 			has_government = totalist
@@ -382,6 +418,15 @@ increase_ruling_party_popularity_by_20 = {
 increase_ruling_party_popularity_by_25 = {
 	if = {
 		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = 0.25
+		}
+	}
+	if = {
+		limit = {
 			has_government = totalist
 		}
 		add_popularity = {
@@ -473,6 +518,15 @@ increase_ruling_party_popularity_by_25 = {
 }
 
 increase_ruling_party_popularity_by_30 = {
+	if = {
+		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = 0.30
+		}
+	}
 	if = {
 		limit = {
 			has_government = totalist
@@ -568,6 +622,15 @@ increase_ruling_party_popularity_by_30 = {
 increase_ruling_party_popularity_by_35 = {
 	if = {
 		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = 0.35
+		}
+	}
+	if = {
+		limit = {
 			has_government = totalist
 		}
 		add_popularity = {
@@ -659,6 +722,15 @@ increase_ruling_party_popularity_by_35 = {
 }
 
 increase_ruling_party_popularity_by_40 = {
+	if = {
+		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = 0.40
+		}
+	}
 	if = {
 		limit = {
 			has_government = totalist
@@ -754,6 +826,15 @@ increase_ruling_party_popularity_by_40 = {
 increase_ruling_party_popularity_by_45 = {
 	if = {
 		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = 0.45
+		}
+	}
+	if = {
+		limit = {
 			has_government = totalist
 		}
 		add_popularity = {
@@ -845,6 +926,15 @@ increase_ruling_party_popularity_by_45 = {
 }
 
 increase_ruling_party_popularity_by_50 = {
+	if = {
+		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = 0.50
+		}
+	}
 	if = {
 		limit = {
 			has_government = totalist
@@ -940,6 +1030,15 @@ increase_ruling_party_popularity_by_50 = {
 decrease_ruling_party_popularity_by_5 = {
 	if = {
 		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = -0.05
+		}
+	}
+	if = {
+		limit = {
 			has_government = totalist
 		}
 		add_popularity = {
@@ -1031,6 +1130,15 @@ decrease_ruling_party_popularity_by_5 = {
 }
 
 decrease_ruling_party_popularity_by_10 = {
+	if = {
+		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = -0.10
+		}
+	}
 	if = {
 		limit = {
 			has_government = totalist
@@ -1126,6 +1234,15 @@ decrease_ruling_party_popularity_by_10 = {
 decrease_ruling_party_popularity_by_15 = {
 	if = {
 		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = -0.15
+		}
+	}
+	if = {
+		limit = {
 			has_government = totalist
 		}
 		add_popularity = {
@@ -1217,6 +1334,15 @@ decrease_ruling_party_popularity_by_15 = {
 }
 
 decrease_ruling_party_popularity_by_20 = {
+	if = {
+		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = -0.20
+		}
+	}
 	if = {
 		limit = {
 			has_government = totalist
@@ -1312,6 +1438,15 @@ decrease_ruling_party_popularity_by_20 = {
 decrease_ruling_party_popularity_by_25 = {
 	if = {
 		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = -0.25
+		}
+	}
+	if = {
+		limit = {
 			has_government = totalist
 		}
 		add_popularity = {
@@ -1403,6 +1538,15 @@ decrease_ruling_party_popularity_by_25 = {
 }
 
 decrease_ruling_party_popularity_by_30 = {
+	if = {
+		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = -0.30
+		}
+	}
 	if = {
 		limit = {
 			has_government = totalist
@@ -1498,6 +1642,15 @@ decrease_ruling_party_popularity_by_30 = {
 decrease_ruling_party_popularity_by_35 = {
 	if = {
 		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = -0.35
+		}
+	}
+	if = {
+		limit = {
 			has_government = totalist
 		}
 		add_popularity = {
@@ -1589,6 +1742,15 @@ decrease_ruling_party_popularity_by_35 = {
 }
 
 decrease_ruling_party_popularity_by_40 = {
+	if = {
+		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = -0.40
+		}
+	}
 	if = {
 		limit = {
 			has_government = totalist
@@ -1684,6 +1846,15 @@ decrease_ruling_party_popularity_by_40 = {
 decrease_ruling_party_popularity_by_45 = {
 	if = {
 		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = -0.45
+		}
+	}
+	if = {
+		limit = {
 			has_government = totalist
 		}
 		add_popularity = {
@@ -1775,6 +1946,15 @@ decrease_ruling_party_popularity_by_45 = {
 }
 
 decrease_ruling_party_popularity_by_50 = {
+	if = {
+		limit = {
+			has_government = marxist
+		}
+		add_popularity = {
+			ideology = marxist
+			popularity = -0.50
+		}
+	}
 	if = {
 		limit = {
 			has_government = totalist

@@ -1591,7 +1591,6 @@ focus_tree = {
 			is_subject = no
 			NOT = {
 				is_in_faction_with = POL
-				is_in_faction_with = GAL
 				is_in_faction_with = AUS
 			}
 		}

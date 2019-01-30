@@ -99,6 +99,9 @@ create_country_leader = {
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}	
 		totalist = {
 			popularity = 3
 		}

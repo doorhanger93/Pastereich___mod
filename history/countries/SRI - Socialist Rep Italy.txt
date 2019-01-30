@@ -92,6 +92,9 @@ country_event = { id = socitaly.1 days = 1 }
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 10
 		}

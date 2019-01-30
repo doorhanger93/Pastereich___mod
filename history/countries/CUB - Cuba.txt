@@ -31,6 +31,9 @@ set_country_flag = Evaristo_Rubio_dead
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 2
 		}

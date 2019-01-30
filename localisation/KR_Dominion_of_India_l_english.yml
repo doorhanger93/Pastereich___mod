@@ -1,8 +1,8 @@
 ﻿l_english:
 
 ### Parties ###
-DEH_totalist_party:0 "Maximists"
-DEH_totalist_party_long:0 "Maximist Party of India
+DEH_totalist_party:0 "Totalists"
+DEH_totalist_party_long:0 "Totalist Party of India
 DEH_syndicalist_party:0 "Syndicalists"
 DEH_syndicalist_party_long:0 "Syndicalist Movement"
 DEH_radical_socialist_party:0 "INC - Radicals"
@@ -54,11 +54,11 @@ DEH_prfsec_tt:0 "Five secessionist divisions will be formed in the Princely Fede
 
 ### Ideas ###
 DEH_unstable_boi:0 "The Disastrous State"
-DEH_unstable_boi_desc:0 "British rule in India is still disastrous a decade after the revolution, and it most likely will never return to its former glory" 
+DEH_unstable_boi_desc:0 "British rule in India is still disastrous a decade after the revolution, and it most likely will never return to its former glory." 
 DEH_warlord_state:0 "The Warlord State"
 DEH_warlord_state_desc:0 "The current Raj is, at its core, a military state. We must fight the godless socialists for the future of all india!"
 DEH_japaid_idea:0 "Japanese Backing"
-DEH_japaid_idea_desc:0 "Without Japanese support, the Raj may not have survived the revolutions. The money from Japan is still vital - its loss would be the final nail in the coffin of the Raj economy"   
+DEH_japaid_idea_desc:0 "Without Japanese support, the Raj may not have survived the revolutions. The money from Japan is still vital - its loss would be the final nail in the coffin of the Raj economy."   
 DEH_princely_power:0 "Power of the Princes"
 DEH_princely_power_desc:0 "The British Raj was only able to remain on the sub-continent thanks to the loyalty of the northern princes. They share power with the government, but it is a difficult and archaic process that involves a great deal of waste."
 DEH_princely_domination:0 "Princely Domination of Government"

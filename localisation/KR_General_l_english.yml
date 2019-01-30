@@ -181,9 +181,10 @@ security_minister:0 "Minister of Interior"
 head_of_intel:0 "Head of Mil. Intelligence"
 
 ### Ideologies ###
+marxist:0 "Marxists"
 totalist:0 "Totalists"
-syndicalist:0 "Syndicalists"
-radical_socialist:0 "Radical Socialists"
+syndicalist:0 "Revolutionary Socialists"
+radical_socialist:0 "Democratic Socialists"
 social_democrat:0 "Social Democrats"
 market_liberal:0 "Market Liberals"
 social_conservative:0 "Social Conservatives"
@@ -193,6 +194,7 @@ national_populist:0 "National Populists"
 social_liberal:0 "Social Liberals"
 
 ### Drift ###
+marxist_drift:0 "Daily Marxist support"
 totalist_drift:0 "Daily Totalist support"
 syndicalist_drift:0 "Daily Syndicalist support"
 radical_socialist_drift:0 "Daily Radical Socialist support"
@@ -205,6 +207,7 @@ national_populist_drift:0 "Daily National Populist support"
 social_liberal_drift:0 "Daily Social Liberal support"
 
 ### Banned ###
+marxist_banned:0 "Banned Marxists"
 totalist_banned:0 "Banned Totalists"
 syndicalist_banned:0 "Banned Syndicalists"
 radical_socialist_banned:0 "Banned Radical Socialists"

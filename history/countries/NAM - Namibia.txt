@@ -21,6 +21,9 @@ set_war_support = 0.67
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 0
 		}

@@ -68,6 +68,9 @@ country_event = { id = gre.3 days = 85 } #Independence Day
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 2
 		}

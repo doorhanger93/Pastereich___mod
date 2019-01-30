@@ -33,7 +33,7 @@
 QIE_INF_01 = {
 	name = "Infantry Unit"
 
-	for_countries = { QIE PRC SHX GXC YUN XSM SIK LEP }
+	for_countries = { QIE SHX GXC YUN XSM SIK LEP }
 
 	can_use = { always = yes }
 
@@ -54,7 +54,7 @@ QIE_INF_01 = {
 QIE_CAV_01 = {
 	name = "Cavalry Unit"
 
-	for_countries = { QIE PRC SHX GXC YUN XSM SIK LEP }
+	for_countries = { QIE SHX GXC YUN XSM SIK LEP }
 
 	can_use = { always = yes }
 
@@ -75,7 +75,7 @@ QIE_CAV_01 = {
 QIE_MOT_01 = {
 	name = "Motorized Unit"
 
-	for_countries = { QIE PRC SHX GXC YUN XSM SIK }
+	for_countries = { QIE SHX GXC YUN XSM SIK }
 
 	can_use = { always = yes }
 
@@ -96,7 +96,7 @@ QIE_MOT_01 = {
 QIE_MEC_01 = {
 	name = "Mechanized Unit"
 
-	for_countries = { QIE PRC SHX GXC YUN XSM SIK }
+	for_countries = { QIE SHX GXC YUN XSM SIK }
 
 	can_use = { always = yes }
 
@@ -117,7 +117,7 @@ QIE_MEC_01 = {
 QIE_ARM_01 = {
 	name = "Armored Unit"
 
-	for_countries = { QIE PRC SHX GXC YUN XSM SIK LEP }
+	for_countries = { QIE SHX GXC YUN XSM SIK LEP }
 
 	can_use = { always = yes }
 
@@ -138,7 +138,7 @@ QIE_ARM_01 = {
 QIE_PAR_01 = {
 	name = "Paratrooper Unit"
 
-	for_countries = { QIE PRC SHX GXC YUN XSM SIK }
+	for_countries = { QIE SHX GXC YUN XSM SIK }
 
 	can_use = { always = yes }
 
@@ -159,7 +159,7 @@ QIE_PAR_01 = {
 QIE_MAR_01 = {
 	name = "Marine Unit"
 
-	for_countries = { QIE PRC SHX GXC YUN XSM SIK }
+	for_countries = { QIE SHX GXC YUN XSM SIK }
 
 	can_use = { always = yes }
 
@@ -180,7 +180,7 @@ QIE_MAR_01 = {
 QIE_MTN_01 = {
 	name = "Mountain Unit"
 
-	for_countries = { QIE PRC SHX GXC YUN XSM SIK }
+	for_countries = { QIE SHX GXC YUN XSM SIK }
 
 	can_use = { always = yes }
 
@@ -201,7 +201,7 @@ QIE_MTN_01 = {
 QIE_GAR_01 = {
 	name = "Garrison Unit"
 
-	for_countries = { QIE PRC SHX GXC YUN XSM SIK }
+	for_countries = { QIE SHX GXC YUN XSM SIK }
 
 	can_use = { always = yes }
 
@@ -222,7 +222,7 @@ QIE_GAR_01 = {
 QIE_MIL_01 = {
 	name = "Minbing"
 
-	for_countries = { QIE PRC SHX GXC YUN XSM SIK LEP }
+	for_countries = { QIE SHX GXC YUN XSM SIK LEP }
 
 	can_use = { always = yes }
 

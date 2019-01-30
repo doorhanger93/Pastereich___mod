@@ -2707,12 +2707,9 @@ annexation_decisions = {
 			NOT = {
 				tag = GER
 				tag = RUS
-				tag = ENP
 				tag = SCT
-				tag = WAL
 				tag = ENG
 				tag = GBR
-				tag = GBP
 				tag = CAN
 			}
 		}
@@ -2749,9 +2746,6 @@ annexation_decisions = {
 				limit = {
 					tag = IRE
 					SCT = {
-						exists = no
-					}
-					WAL = {
 						exists = no
 					}
 				}
@@ -3158,9 +3152,7 @@ annexation_decisions = {
 		icon = generic_flags
 		allowed = {
 			NOT = {
-				tag = GAL
 				tag = POL
-				tag = PLC
 				tag = AUS
 				tag = UKR
 			}
@@ -3172,9 +3164,6 @@ annexation_decisions = {
 				NOT = {
 					original_tag = UKR
 					has_country_flag = GAL_CONQ
-				}
-				GAL = {
-					exists = no
 				}
 				NOT = {
 					controls_state = 43
@@ -4902,7 +4891,6 @@ annexation_decisions = {
 				tag = RUS
 				tag = SOV
 				tag = POL
-				tag = PLC
 			}
 		}
 		activation = {
@@ -6524,8 +6512,6 @@ annexation_decisions = {
 				tag = RUS
 				tag = SOV
 				tag = LIT
-				tag = GAL
-				tag = PLC
 			}
 		}
 		activation = {
@@ -6537,9 +6523,6 @@ annexation_decisions = {
 				}
 				NOT = {
 					has_country_flag = POL_CONQ
-				}
-				PLC = {
-					exists = no
 				}
 			}
 		}

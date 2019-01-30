@@ -23,6 +23,9 @@ country_event = { id = LIB.1 days = 1 } #Intro event
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 7
 		}

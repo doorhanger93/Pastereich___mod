@@ -24,7 +24,7 @@ set_war_support = 0.5
 set_politics = {
 
 	parties = {
-		totalist = {
+		marxist = {
 			popularity = 15
 		}
 		radical_socialist = {
@@ -54,6 +54,9 @@ set_politics = {
 		paternal_autocrat = {
 			popularity = 0
 			banned = yes
+		}
+		totalist = {
+			popularity = 0
 		}
 		national_populist = {
 			popularity = 0
@@ -96,7 +99,7 @@ create_country_leader = {
 	desc = "POLITICS_PHAM_VAN_DONG_DESC"
 	picture = "gfx/leaders/INC/Portrait_INC_Pham_Van_Dong.tga"
 	expire = "2000.4.29"
-	ideology = totalist_subtype
+	ideology = marxist_subtype
 	traits = { }
 }
 create_country_leader = {

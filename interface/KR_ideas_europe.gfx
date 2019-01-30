@@ -121,7 +121,10 @@ spriteTypes = {
 		name = "GFX_idea_UoB_women_soldiers"
 		texturefile = "gfx/interface/ideas/ideas/UoB_women_soldiers.tga"
 	}
-
+	spriteType = {
+		name = "GFX_idea_ENG_IRE_friends"
+		texturefile = "gfx/interface/ideas/ideas/ENG_IRE_friends.tga"
+	}
 	### FRA ###
 
 	spriteType = {

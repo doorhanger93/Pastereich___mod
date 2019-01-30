@@ -68,10 +68,6 @@ country_event = {# Liberation of the UK(no Lawrence)
 			limit = { SCT = { is_subject_of = CAN } }
 			GBR = { annex_country = { target = SCT transfer_troops = yes } }
 		}
-		if = {
-			limit = { WAL = { is_subject_of = CAN } }
-			GBR = { annex_country = { target = WAL transfer_troops = yes } }
-		}
 
 		# then transfer states
 		hidden_effect = {
@@ -80,7 +76,6 @@ country_event = {# Liberation of the UK(no Lawrence)
 					OR = {
 						is_core_of = ENG
 						is_core_of = SCT
-						is_core_of = WAL
 					}
 				}
 				GBR = { transfer_state = PREV }
@@ -92,7 +87,6 @@ country_event = {# Liberation of the UK(no Lawrence)
 						OR = {
 							is_core_of = ENG
 							is_core_of = SCT
-							is_core_of = WAL
 						}
 					}
 				}
@@ -101,7 +95,6 @@ country_event = {# Liberation of the UK(no Lawrence)
 						OR = {
 							is_core_of = ENG
 							is_core_of = SCT
-							is_core_of = WAL
 						}
 					}
 					GBR = { transfer_state = PREV }
@@ -126,7 +119,6 @@ country_event = {# Liberation of the UK(no Lawrence)
 						OR = {
 							is_core_of = ENG
 							is_core_of = SCT
-							is_core_of = WAL
 						}
 					}
 					add_core_of = GBR
@@ -137,7 +129,6 @@ country_event = {# Liberation of the UK(no Lawrence)
 						OR = {
 							is_claimed_by = ENG
 							is_claimed_by = SCT
-							is_claimed_by = WAL
 						}
 					}
 					add_claim_by = GBR
@@ -256,10 +247,6 @@ country_event = {# Liberation of the UK(no Lawrence)
 			limit = { SCT = { is_subject_of = CAN } }
 			GBR = { annex_country = { target = SCT transfer_troops = yes } }
 		}
-		if = {
-			limit = { WAL = { is_subject_of = CAN } }
-			GBR = { annex_country = { target = WAL transfer_troops = yes } }
-		}
 
 		# then transfer states
 		hidden_effect = {
@@ -268,7 +255,6 @@ country_event = {# Liberation of the UK(no Lawrence)
 					OR = {
 						is_core_of = ENG
 						is_core_of = SCT
-						is_core_of = WAL
 					}
 				}
 				GBR = { transfer_state = PREV }
@@ -280,8 +266,7 @@ country_event = {# Liberation of the UK(no Lawrence)
 						OR = {
 							is_core_of = ENG
 							is_core_of = SCT
-							is_core_of = WAL
-						}
+						}	
 					}
 				}
 				every_owned_state = {
@@ -289,8 +274,7 @@ country_event = {# Liberation of the UK(no Lawrence)
 						OR = {
 							is_core_of = ENG
 							is_core_of = SCT
-							is_core_of = WAL
-						}
+						}	
 					}
 					GBR = { transfer_state = PREV }
 				}
@@ -314,7 +298,6 @@ country_event = {# Liberation of the UK(no Lawrence)
 						OR = {
 							is_core_of = ENG
 							is_core_of = SCT
-							is_core_of = WAL
 						}
 					}
 					add_core_of = GBR
@@ -325,7 +308,6 @@ country_event = {# Liberation of the UK(no Lawrence)
 						OR = {
 							is_claimed_by = ENG
 							is_claimed_by = SCT
-							is_claimed_by = WAL
 						}
 					}
 					add_claim_by = GBR
@@ -487,7 +469,6 @@ country_event = {# Lawrence Liberates the UK.
 						OR = {
 							is_core_of = ENG
 							is_core_of = SCT
-							is_core_of = WAL
 						}
 					}
 					add_core_of = GBR
@@ -498,7 +479,6 @@ country_event = {# Lawrence Liberates the UK.
 						OR = {
 							is_claimed_by = ENG
 							is_claimed_by = SCT
-							is_claimed_by = WAL
 						}
 					}
 					add_claim_by = GBR

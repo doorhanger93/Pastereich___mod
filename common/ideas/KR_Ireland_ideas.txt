@@ -7,6 +7,17 @@ ideas = {
 	##############
 
 	country = {
+	
+		IRE_ENG_friends = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRE_ENG_friends"}
+			picture = ENG_IRE_friends
+			modifier = {
+				production_speed_buildings_factor = 0.02
+				industrial_capacity_dockyard = 0.02
+				research_time_factor = -0.05
+			}
+		}
+		
 		IRE_DEFENCE = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRE_DEFENCE"}
 			picture = IRE_defense

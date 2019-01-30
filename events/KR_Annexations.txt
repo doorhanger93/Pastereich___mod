@@ -7,6 +7,7 @@
 # Converted to on_actions by Dskod1
 # Converted from on_actions to decisions by Rylock and Dr_Njitram
 # Any new post-annexation events need to have their triggers in the KR_on_actions file
+# doorhanger wuz here
 ###########################
 
 add_namespace = annex
@@ -1163,12 +1164,7 @@ country_event = { #HUN liberation
 		}
 		if = {
 			limit = {
-				OR = {
-					owns_state = 91
-					GAL = {
-						is_subject_of = ROOT
-					}
-				}
+				owns_state = 91
 			}
 			HUN = {
 				remove_state_core = 73
@@ -1234,16 +1230,6 @@ country_event = { #HUN liberation
 				}
 			}
 			AUS = { transfer_state = 784 }
-		}
-
-		if = {
-			limit = {
-				owns_state = 73
-				GAL = {
-					is_subject_of = ROOT
-				}
-			}
-			GAL = { transfer_state = 73 }
 		}
 
 		hidden_effect = {
@@ -15326,6 +15312,11 @@ country_event = { #Irish Annexation of Britain
 	is_triggered_only = yes
 
 	option = {
+		trigger = {
+			NOT = {
+			is_in_faction_with = CAN
+			}
+		}
 		name = annex.131.a #No land taken
 		ai_chance = {
 			factor = 50
@@ -15336,26 +15327,16 @@ country_event = { #Irish Annexation of Britain
 	}
 
 	option = {
-		name = annex.131.b #Highlands
+		trigger = {
+			NOT = {
+				is_in_faction_with = CAN
+			}	
+		}
+		name = annex.131.b #Highlands PR:make this puppet highlands or something?
 		ai_chance = {
 			factor = 30
 		}
 		add_state_claim = 120
-		country_event = {
-			id = annex.132
-		}
-	}
-
-	option = {
-		name = annex.131.c #Highlands and Cornwall
-		ai_chance = {
-			factor = 20
-		}
-		ENP = {
-			remove_state_core = 123
-		}
-		add_state_claim = 120
-		add_state_claim = 123
 		country_event = {
 			id = annex.132
 		}
@@ -15398,7 +15379,7 @@ country_event = {
 		}
 
 		hidden_effect = {
-			ENP = {
+			GBR = {
 				add_state_core = 123
 				add_state_core = 338
 				add_state_core = 127
@@ -15418,57 +15399,7 @@ country_event = {
 				add_state_core = 938
 				add_state_core = 939
 			}
-			WAL = {
-				add_state_core = 122
-			}
 		}
-
-		every_country = {
-			limit = {
-				OR = {
-					tag = IRE
-					is_in_faction_with = IRE
-				}
-			}
-		}
-
-		every_owned_state = {
-			limit = {
-				is_owned_by = ROOT
-				NOT = {
-					is_claimed_by = ROOT
-				}
-				is_core_of = ENP
-			}
-			ENP = {
-				transfer_state = PREV
-			}
-
-		}
-		puppet = ENP
-		every_country = {
-			limit = {
-				OR = {
-					tag = IRE
-					is_in_faction_with = IRE
-				}
-			}
-		}
-
-		every_owned_state = {
-			limit = {
-				is_owned_by = ROOT
-				NOT = {
-					is_claimed_by = ROOT
-				}
-				is_core_of = WAL
-			}
-			WAL = {
-				transfer_state = PREV
-			}
-
-		}
-		puppet = WAL
 
 		every_country = {
 			limit = {
@@ -15493,6 +15424,42 @@ country_event = {
 
 		}
 		puppet = SCT
+		every_country = {
+			limit = {
+				OR = {
+					tag = IRE
+					is_in_faction_with = IRE
+				}
+			}
+		}
+
+		every_country = {
+			limit = {
+				OR = {
+					tag = IRE
+					is_in_faction_with = IRE
+				}
+			}
+		}
+
+		every_owned_state = {
+			limit = {
+				is_owned_by = ROOT
+				NOT = {
+					is_claimed_by = ROOT
+				}
+				is_core_of = GBR
+			}
+			GBR = {
+				transfer_state = PREV
+			}
+
+		}
+		puppet = GBR
+		GBR = {
+			set_country_flag = GBR_is_england
+			set_cosmetic_tag = GBR_england
+		}
 		#event
 	}
 
@@ -15503,7 +15470,7 @@ country_event = {
 		}
 
 		hidden_effect = {
-			GBP = {
+			GBR = {
 				add_state_core = 123
 				add_state_core = 338
 				add_state_core = 127
@@ -15539,16 +15506,17 @@ country_event = {
 				NOT = {
 					is_claimed_by = ROOT
 				}
-				is_core_of = GBP
+				is_core_of = GBR
 			}
-			GBP = {
+			GBR = {
 				transfer_state = PREV
 			}
 
 		}
-		puppet = GBP
-		GBP = {
-			set_cosmetic_tag = GBP_republic
+		puppet = GBR
+		GBR = {
+			set_country_flag = GBR_is_republic
+			set_cosmetic_tag = GBR_republic
 		}
 	}
 
@@ -16287,46 +16255,6 @@ country_event = { #Fate of Galicia
 	is_triggered_only = yes
 
 	option = {
-		name = annex.146.a #Liberate Galicia
-		ai_chance = {
-			factor = 25
-		}
-		if = {
-			limit = {
-				owns_state = 73
-			}
-			GAL = {
-				add_state_core = 73
-			}
-		}
-		if = {
-			limit = {
-				OR = {
-					tag = ROM
-					tag = RRM
-				}
-			}
-			GAL = {
-				remove_state_core = 80
-			}
-		}
-		every_owned_state = {
-			limit = {
-				is_core_of = GAL
-				is_owned_by = ROOT
-				NOT = {
-					is_core_of = ROOT
-					is_claimed_by = ROOT
-				}
-			}
-			GAL = {
-				transfer_state = PREV
-			}
-		}
-		puppet = GAL
-	}
-
-	option = {
 		name = annex.146.b #Give to Poland
 		ai_chance = {
 			factor = 100
@@ -16341,14 +16269,6 @@ country_event = { #Fate of Galicia
 		}
 		if = {
 			limit = {
-				owns_state = 73
-			}
-			GAL = {
-				add_state_core = 73
-			}
-		}
-		if = {
-			limit = {
 				owns_state = 80
 				OR = {
 					is_in_faction_with = ROM
@@ -16371,78 +16291,8 @@ country_event = { #Fate of Galicia
 				transfer_state = 80
 			}
 		}
-		every_owned_state = {
-			limit = {
-				is_core_of = GAL
-				is_owned_by = ROOT
-				NOT = {
-					is_core_of = ROOT
-					is_claimed_by = ROOT
-				}
-			}
-			POL = {
-				transfer_state = PREV
-			}
-		}
-	}
-
-	option = {
-		name = annex.146.b #PLC Variant
-		ai_chance = {
-			factor = 100
-		}
-		trigger = {
-			OR = {
-				is_in_faction_with = PLC
-				PLC = {
-					is_subject_of = ROOT
-				}
-			}
-		}
-		if = {
-			limit = {
-				owns_state = 73
-			}
-			GAL = {
-				add_state_core = 73
-			}
-		}
-		if = {
-			limit = {
-				owns_state = 80
-				OR = {
-					is_in_faction_with = ROM
-					ROM = { is_subject_of = ROOT }
-				}
-			}
-			ROM = {
-				transfer_state = 80
-			}
-		}
-		if = {
-			limit = {
-				owns_state = 80
-				OR = {
-					is_in_faction_with = RRM
-					RRM = { is_subject_of = ROOT }
-				}
-			}
-			RRM = {
-				transfer_state = 80
-			}
-		}
-		every_owned_state = {
-			limit = {
-				is_core_of = GAL
-				is_owned_by = ROOT
-				NOT = {
-					is_core_of = ROOT
-					is_claimed_by = ROOT
-				}
-			}
-			PLC = {
-				transfer_state = PREV
-			}
+		POL = {
+			transfer_state = 73
 		}
 	}
 
@@ -16457,14 +16307,6 @@ country_event = { #Fate of Galicia
 				UKR = {
 					is_subject_of = ROOT
 				}
-			}
-		}
-		if = {
-			limit = {
-				owns_state = 73
-			}
-			GAL = {
-				add_state_core = 73
 			}
 		}
 		if = {
@@ -16502,31 +16344,9 @@ country_event = { #Fate of Galicia
 			POL = {
 				transfer_state = 88
 			}
-		}
-		if = {
-			limit = {
-				owns_state = 88
-				OR = {
-					is_in_faction_with = PLC
-					PLC = { is_subject_of = ROOT }
-				}
-			}
-			PLC = {
-				transfer_state = 88
-			}
-		}
-		every_owned_state = {
-			limit = {
-				is_core_of = GAL
-				is_owned_by = ROOT
-				NOT = {
-					is_core_of = ROOT
-					is_claimed_by = ROOT
-				}
-			}
-			UKR = {
-				transfer_state = PREV
-			}
+		}			
+		UKR = {
+			transfer_state = 73
 		}
 	}
 
@@ -19662,7 +19482,7 @@ country_event = { #Fate of Britain
 		}
 
 		hidden_effect = {
-			ENP = {
+			GBR = {
 				add_state_core = 123
 				add_state_core = 338
 				add_state_core = 127
@@ -19673,6 +19493,7 @@ country_event = { #Fate of Britain
 				add_state_core = 130
 				add_state_core = 132
 				add_state_core = 131
+				add_state_core = 122
 			}
 			SCT = {
 				add_state_core = 133
@@ -19682,35 +19503,22 @@ country_event = { #Fate of Britain
 				add_state_core = 938
 				add_state_core = 939
 			}
-			WAL = {
-				add_state_core = 122
-			}
 		}
 
 		every_owned_state = {
 			limit = {
 				is_owned_by = ROOT
-				is_core_of = ENP
+				is_core_of = GBR
 			}
-			ENP = {
+			GBR = {
 				transfer_state = PREV
 			}
 
 		}
-		puppet = ENP
-
-		every_owned_state = {
-			limit = {
-				is_owned_by = ROOT
-				is_core_of = WAL
-			}
-			WAL = {
-				transfer_state = PREV
-			}
-
+		puppet = GBR
+		GBR = {
+			set_cosmetic_tag = GBR_england
 		}
-		puppet = WAL
-
 		every_owned_state = {
 			limit = {
 				is_owned_by = ROOT
@@ -19731,7 +19539,7 @@ country_event = { #Fate of Britain
 		}
 
 		hidden_effect = {
-			GBP = {
+			GBR = {
 				add_state_core = 123
 				add_state_core = 338
 				add_state_core = 127
@@ -19755,14 +19563,17 @@ country_event = { #Fate of Britain
 		every_owned_state = {
 			limit = {
 				is_owned_by = ROOT
-				is_core_of = GBP
+				is_core_of = GBR
 			}
-			GBP = {
+			GBR = {
 				transfer_state = PREV
 			}
 
 		}
-		puppet = GBP
+		puppet = GBR
+		GBR = {
+			set_cosmetic_tag = GBR_republic
+		}
 		add_political_power = -100
 	}
 

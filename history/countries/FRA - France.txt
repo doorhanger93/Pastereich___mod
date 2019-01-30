@@ -106,6 +106,9 @@ add_opinion_modifier = { target = SWI modifier = embargo }
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 12
 		}

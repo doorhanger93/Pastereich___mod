@@ -120,8 +120,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_CON_MON"
 			custom_effect_tooltip = con_mon_tooltip
-			remove_ideas = rus_political_instability
-			remove_ideas = soviet_worker_soldier
+			#remove_ideas = rus_political_instability
+			#remove_ideas = soviet_worker_soldier
 			hidden_effect = {
 				set_country_flag = RUS_CON_MON
 				country_event = {
@@ -322,8 +322,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_TSAR_KYR"
 			custom_effect_tooltip = tsar_kyr_tooltip
-			remove_ideas = rus_political_instability
-			remove_ideas = soviet_worker_soldier
+			#remove_ideas = rus_political_instability
+			#remove_ideas = soviet_worker_soldier
 			if = { limit = { NOT = { has_country_flag = KYR_DEAD } }
 				hidden_effect = {
 					set_country_flag = RUS_TSAR_KYR
@@ -498,8 +498,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_TSAR_DMI"
 			custom_effect_tooltip = tsar_dmi_tooltip
-			remove_ideas = rus_political_instability
-			remove_ideas = soviet_worker_soldier
+			#remove_ideas = rus_political_instability
+			#remove_ideas = soviet_worker_soldier
 			hidden_effect = {
 				set_country_flag = RUS_TSAR_DMI
 				if = {
@@ -668,8 +668,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_ARI_REP"
 			custom_effect_tooltip = ari_rep_tooltip
-			remove_ideas = rus_political_instability
-			remove_ideas = soviet_worker_soldier
+			#remove_ideas = rus_political_instability
+			#remove_ideas = soviet_worker_soldier
 			hidden_effect = {
 				set_country_flag = RUS_ARI_REP
 				country_event = {
@@ -903,8 +903,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_DEM_REP"
 			custom_effect_tooltip = dem_rep_tooltip
-			remove_ideas = rus_political_instability
-			remove_ideas = soviet_worker_soldier
+			#remove_ideas = rus_political_instability
+			#remove_ideas = soviet_worker_soldier
 			hidden_effect = {
 				set_country_flag = RUS_DEM_REP
 				country_event = {
@@ -1045,8 +1045,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_vozhd"
 			custom_effect_tooltip = vozhd_focus_tooltip
-			remove_ideas = rus_political_instability
-			remove_ideas = soviet_worker_soldier
+			#remove_ideas = rus_political_instability
+			#remove_ideas = soviet_worker_soldier
 			add_stability = 0.1
 			hidden_effect = {
 				set_country_flag = RUS_vozhd
@@ -1196,8 +1196,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_MIL_DICT"
 			custom_effect_tooltip = MIL_DICT_focus_tooltip
-			remove_ideas = rus_political_instability
-			remove_ideas = soviet_worker_soldier
+			#remove_ideas = rus_political_instability
+			#remove_ideas = soviet_worker_soldier
 			add_stability = -0.1
 			if = {
 				limit = {
@@ -7908,33 +7908,6 @@ focus_tree = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					country_exists = PLC
-					PLC = {
-						has_war = no
-						is_subject = no
-						controls_state = 10
-					}
-					NOT = {
-						PLC = {
-							has_government = radical_socialist
-							has_government = totalist
-							has_government = syndicalist
-							is_in_faction_with = CAN
-							is_in_faction_with = RUS
-							is_in_faction_with = FRA
-							is_in_faction_with = GER
-						}
-					}
-				}
-				PLC = {
-					country_event = {
-						id = rusfor.11211
-						days = 2
-					}
-				}
-			}
 		}
 	}
 
@@ -8755,250 +8728,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_ultimatum_galicia
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = 9
-		y = 10
-		cost = 2
-		available = {
-			NOT = {
-				AND = {
-					has_non_aggression_pact_with = GER
-					GAL = {
-						OR = {
-							is_in_faction_with = GER
-							AND = {
-								AUS = {
-									is_in_faction_with = GER
-								}
-								is_subject_of = AUS
-							}
-							AND = {
-								POL = {
-									is_in_faction_with = GER
-								}
-								is_subject_of = POL
-							}
-						}
-					}
-				}
-			}
-			is_subject = no
-			NOT = {
-				is_in_faction_with = GAL
-				AND = {
-					GAL = {
-						is_subject_of = AUS
-					}
-					is_in_faction_with = AUS
-				}
-				AND = {
-					GAL = {
-						is_subject_of = POL
-					}
-					is_in_faction_with = POL
-				}
-				AND = {
-					POL = {
-						owns_state = 91
-					}
-					is_in_faction_with = POL
-				}
-				AND = {
-					AUS = {
-						owns_state = 91
-					}
-					is_in_faction_with = AUS
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = rus_galicia_tooltip
-				owns_state = 11
-				controls_state = 11
-				owns_state = 12
-				controls_state = 12
-				owns_state = 206
-				controls_state = 206
-				owns_state = 202
-				controls_state = 202
-				owns_state = 137
-				controls_state = 137
-				owns_state = 221
-				controls_state = 221
-			}
-		}
-		prerequisite = {
-			focus = RUS_crush_mitteleuropa
-		}
-		bypass = {
-			AND = {
-				GAL = {
-					OR = {
-						is_subject_of = ROOT
-						has_capitulated = yes
-						exists = no
-					}
-				}
-				AUS = {
-					OR = {
-						is_subject_of = ROOT
-						has_capitulated = yes
-						exists = no
-						NOT = {
-							has_war_with = RUS
-						}
-					}
-				}
-				POL = {
-					OR = {
-						is_subject_of = ROOT
-						has_capitulated = yes
-						exists = no
-						NOT = {
-							has_war_with = RUS
-						}
-					}
-				}
-				88 = { is_controlled_by_ROOT_or_subject = yes }
-				91 = { is_controlled_by_ROOT_or_subject = yes }
-				89 = { is_controlled_by_ROOT_or_subject = yes }
-				80 = { is_controlled_by_ROOT_or_subject = yes }
-			}
-		}
-		cancel = {
-			is_subject = yes
-		}
-
-		will_lead_to_war_with = GAL
-		will_lead_to_war_with = AUS
-		will_lead_to_war_with = POL
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				has_stability < 0.25
-			}
-			modifier = {
-				factor = 0
-				has_country_flag = RUS_REAL
-			}
-			modifier = {
-				factor = 0
-				AND = {
-					has_war = yes
-					any_enemy_country = {
-						ic_ratio = {
-							tag = ROOT
-							ratio > 0.75
-						}
-					}
-				}
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus RUS_ultimatum_galicia"
-			GAL = {
-				add_opinion_modifier = {
-					target = RUS
-					modifier = RUS_ultimatum_galicia
-				}
-			}
-			POL = {
-				add_opinion_modifier = {
-					target = RUS
-					modifier = RUS_ultimatum_galicia
-				}
-			}
-			AUS = {
-				add_opinion_modifier = {
-					target = AUS
-					modifier = RUS_ultimatum_galicia1
-				}
-			}
-			add_state_claim = 88
-			add_state_claim = 91
-			add_state_claim = 89
-			add_state_claim = 80
-			if = {
-				limit = {
-					AUS = {
-						owns_state = 91
-						NOT = {
-							has_war_with = RUS
-						}
-					}
-				}
-				AUS = {
-					country_event = {
-						id = rusfor.1210
-					}
-				}
-			}
-			if = {
-				limit = {
-					POL = {
-						owns_state = 91
-						NOT = {
-							has_war_with = RUS
-						}
-					}
-				}
-				POL = {
-					country_event = {
-						id = rusfor.1214
-					}
-				}
-			}
-			if = {
-				limit = {
-					GAL = {
-						is_subject_of = AUS
-						owns_state = 91
-						NOT = {
-							has_war_with = RUS
-						}
-					}
-				}
-				AUS = {
-					country_event = {
-						id = rusfor.1218
-					}
-				}
-			}
-			if = {
-				limit = {
-					GAL = {
-						is_subject_of = POL
-						owns_state = 91
-						NOT = {
-							has_war_with = RUS
-						}
-					}
-				}
-				POL = {
-					country_event = {
-						id = rusfor.1224
-					}
-				}
-			}
-			if = {
-				limit = {
-					country_exists = GAL
-					GAL = {
-						is_subject = no
-						owns_state = 91
-					}
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = GAL
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = RUS_crush_poland
 		icon = GFX_goal_poland
 		x = 7
@@ -9029,10 +8758,6 @@ focus_tree = {
 				OR = {
 					owns_state = 11
 					POL = {
-						is_subject_of = RUS
-						owns_state = 11
-					}
-					PLC = {
 						is_subject_of = RUS
 						owns_state = 11
 					}
@@ -9102,40 +8827,6 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				AND = {
-					has_country_flag = RUS_REAL
-					PLC = {
-						OR = {
-							is_in_faction_with = GER
-							is_in_faction_with = FRA
-							is_in_faction_with = ENG
-							is_in_faction_with = AUS
-							is_in_faction_with = DNF
-							is_in_faction_with = AHE
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 10
-				AND = {
-					has_country_flag = RUS_EXP
-					NOT = {
-						PLC = {
-							OR = {
-								is_in_faction_with = GER
-								is_in_faction_with = FRA
-								is_in_faction_with = ENG
-								is_in_faction_with = AUS
-								is_in_faction_with = DNF
-								is_in_faction_with = AHE
-							}
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				AND = {
 					has_war = yes
 					any_enemy_country = {
 						ic_ratio = {
@@ -9149,12 +8840,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus RUS_crush_poland"
 			POL = {
-				add_opinion_modifier = {
-					target = RUS
-					modifier = RUS_crush_poland
-				}
-			}
-			PLC = {
 				add_opinion_modifier = {
 					target = RUS
 					modifier = RUS_crush_poland
@@ -9179,21 +8864,6 @@ focus_tree = {
 				create_wargoal = {
 					type = annex_everything
 					target = POL
-				}
-			}
-			if = {
-				limit = {
-					PLC = {
-						OR = {
-							owns_state = 10
-							owns_state = 92
-							owns_state = 87
-						}
-					}
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = PLC
 				}
 			}
 		}

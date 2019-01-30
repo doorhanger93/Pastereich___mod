@@ -47,6 +47,9 @@ set_convoys = 40
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 10
 		}

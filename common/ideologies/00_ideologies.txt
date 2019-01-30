@@ -7,12 +7,11 @@
 
 ideologies = {
 
-	totalist = {
+	marxist = {
 		types = {
-			totalist_subtype = {} #generic
+			marxist_subtype = {} #generic
 
 			vanguardist = {}
-			totalist = {}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_TOTALIST_1"
@@ -223,7 +222,7 @@ ideologies = {
 			"FACTION_NAME_AUTHORITARIAN_DEMOCRAT_5"
 			"FACTION_NAME_AUTHORITARIAN_DEMOCRAT_6"
 		}
-		color = { 110 110 110 }
+		color = { 140 140 140 }
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -250,7 +249,7 @@ ideologies = {
 			"FACTION_NAME_PATERNAL_AUTOCRAT_5"
 			"FACTION_NAME_PATERNAL_AUTOCRAT_6"
 		}
-		color = { 45 45 45 }
+		color = { 75 75 75 }
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -277,7 +276,37 @@ ideologies = {
 			"FACTION_NAME_NATIONAL_POPULIST_5"
 			"FACTION_NAME_NATIONAL_POPULIST_6"
 		}
-		color = { 142 57 0 }
+		color = { 0 0 0 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
+		}
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	
+	totalist = {
+		types = {
+			totalist_subtype = {} #generic
+
+			vanguardist = {}
+			totalist = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_TOTALIST_1"
+			"FACTION_NAME_TOTALIST_2"
+			"FACTION_NAME_TOTALIST_3"
+			"FACTION_NAME_TOTALIST_4"
+			"FACTION_NAME_TOTALIST_5"
+			"FACTION_NAME_TOTALIST_6"
+		}
+		color = { 127 48 0 }
 		rules = {
 			can_force_government = no
 			can_puppet = no
