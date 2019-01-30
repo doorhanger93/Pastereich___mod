@@ -4,8 +4,8 @@ state={
 	name="STATE_675"
 
 	history={
-		owner = OTT
-		add_core_of = OTT
+		owner = JBS
+		add_core_of = JBS
 		add_core_of = IRQ
 		buildings = {
 			infrastructure = 1

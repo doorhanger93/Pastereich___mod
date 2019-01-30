@@ -5,8 +5,8 @@ state={
 		1544 4440 4562 4574 4591 11976 14998 
 	}
 	history={
-		owner = OTT
-		add_core_of = OTT
+		owner = JBS
+		add_core_of = JBS
 		add_core_of = SYR
 		buildings = {
 			infrastructure = 1
