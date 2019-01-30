@@ -4492,12 +4492,6 @@ country_event = { # Poland is Defiant
 			}
 			add_opinion_modifier = { target = POL modifier = ITA_outraged }
 		}
-		if = {
-			limit = {
-				PLC = { exists = yes }
-			}
-			add_opinion_modifier = { target = PLC modifier = ITA_outraged }
-		}
 	}
 }
 
@@ -4699,60 +4693,6 @@ country_event = { # Poland refuses the Völkerbund
 	}
 }
 
-country_event = { # PLC invited to the Völkerbund
-	id = gerfor.177
-	immediate = {log = "[GetDateText]: [Root.GetName]: event gerfor.177"}
-	title = gerfor.177.t
-	desc = gerfor.177.d
-	picture = diplomacy1
-
-	is_triggered_only = yes
-
-	option = {
-		name = gerfor.177.a # Yes
-		ai_chance = { factor = 10 }
-		add_political_power = -50
-		GER = { country_event = { id = gerfor.178 days = 2 } }
-	}
-
-	option = {
-		name = gerfor.177.b # No
-		ai_chance = { factor = 90 }
-		add_political_power = 25
-		GER = { country_event = { id = gerfor.179 days = 2 } }
-	}
-}
-
-country_event = { # PLC rejoins the Völkerbund
-	id = gerfor.178
-	immediate = {log = "[GetDateText]: [Root.GetName]: event gerfor.178"}
-	title = gerfor.178.t
-	desc = gerfor.178.d
-	picture = diplomacy1
-
-	is_triggered_only = yes
-
-	option = {
-		name = gerfor.178.a # wise
-		add_political_power = 50
-		add_to_faction = PLC
-	}
-}
-
-country_event = { # PLC still refuses the Völkerbund
-	id = gerfor.179
-	immediate = {log = "[GetDateText]: [Root.GetName]: event gerfor.179"}
-	title = gerfor.179.t
-	desc = gerfor.179.d
-	picture = diplomacy1
-
-	is_triggered_only = yes
-
-	option = {
-		name = gerfor.179.a # what
-		add_political_power = -100
-	}
-}
 
 country_event = { # German diplomatic Mission to Poland
 	id = gerfor.180

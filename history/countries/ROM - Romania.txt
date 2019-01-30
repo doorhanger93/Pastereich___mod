@@ -6,7 +6,6 @@ set_research_slots = 3
 
 add_ideas = {
 	#medium_economy
-	ROM_royalist_threat
 	free_trade
 	limited_conscription
 }
@@ -59,8 +58,11 @@ add_opinion_modifier = { target = BUL modifier = Balkans_hates_bulgaria }
 set_politics = {
 
 	parties = {
-		totalist = {
+		marxist = {
 			popularity = 0
+		}
+		totalist = {
+			popularity = 1
 		}
 		radical_socialist = {
 			popularity = 0
@@ -69,29 +71,29 @@ set_politics = {
 			popularity = 0
 		}
 		social_democrat = {
-			popularity = 0
+			popularity = 3
 		}
 		social_liberal = {
-			popularity = 3
+			popularity = 5
 		}
 		market_liberal = {
 			popularity = 13
 		}
 		social_conservative = {
-			popularity = 18
+			popularity = 17
 		}
 		authoritarian_democrat = {
-			popularity = 8
+			popularity = 40
 		}
 		paternal_autocrat = {
-			popularity = 5
+			popularity = 8
 		}
 		national_populist = {
-			popularity = 53
+			popularity = 13
 		}
 	}
 
-	ruling_party = national_populist
+	ruling_party = authoritarian_democrat
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
@@ -124,9 +126,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Nicolae I"
-	desc = "POLITICS_NICOLAE_I_DESC"
-	picture = "Portrait_Romania_Nicolae_I.tga"
+	name = "Carol II"
+	desc = "POLITICS_CAROL_II_DESC"
+	picture = "Portrait_ROM_Carol_II.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
 	traits = { }

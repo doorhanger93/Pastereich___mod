@@ -93,6 +93,9 @@ set_country_flag = LEC_profit_for_you
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 0
 		}
@@ -159,7 +162,7 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "George V"
+	name = "King-Emperor George V"
 	desc = "POLITICS_GEORGE_DESC"
 	picture = "Portrait_Canada_King_George.tga"
 	expire = "1965.1.1"

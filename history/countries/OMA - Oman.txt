@@ -24,6 +24,9 @@ country_event = { id = oma.1 days = 1 } #startup event
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 0
 		}

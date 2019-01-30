@@ -3899,7 +3899,6 @@ country_event = { #Fate of alliance with Internationale
 			has_war_with = BAT
 			has_war_with = LIT
 			has_war_with = POL
-			has_war_with = PLC
 			has_war_with = FIN
 			has_war_with = AUS
 			has_war_with = HUN
@@ -17914,9 +17913,9 @@ country_event = { #Commonwealth wants to join the Völkerbund
 		ai_chance = {
 			factor = 70
 		}
-		add_to_faction = PLC
+		add_to_faction = POL
 		add_stability = -0.02
-		PLC = {
+		POL = {
 			country_event = {
 				id = rusfor.11231
 			}
@@ -17926,7 +17925,7 @@ country_event = { #Commonwealth wants to join the Völkerbund
 			modifier = POL_join_mitteleuropa_rusee
 		}
 		add_opinion_modifier = {
-			target = PLC
+			target = POL
 			modifier = POL_join_mitteleuropa_rusee2
 		}
 	}
@@ -17937,10 +17936,10 @@ country_event = { #Commonwealth wants to join the Völkerbund
 			factor = 20
 		}
 		if = {
-			limit = { country_exists = PLC }
-			give_guarantee = PLC
+			limit = { country_exists = POL }
+			give_guarantee = POL
 			diplomatic_relation = {
-				country = PLC
+				country = POL
 				relation = non_aggression_pact
 			}
 		}
@@ -17950,7 +17949,7 @@ country_event = { #Commonwealth wants to join the Völkerbund
 			modifier = GER_guarantee_poland_rusee2
 		}
 		add_opinion_modifier = {
-			target = PLC
+			target = POL
 			modifier = GER_guarantee_poland_rusee1
 		}
 	}
@@ -18005,13 +18004,13 @@ country_event = { #Commonwealth joins the Völkerbund
 		}
 		FRA = {
 			add_opinion_modifier = {
-				target = PLC
+				target = POL
 				modifier = embargo
 			}
 		}
 		ENG = {
 			add_opinion_modifier = {
-				target = PLC
+				target = POL
 				modifier = embargo
 			}
 		}

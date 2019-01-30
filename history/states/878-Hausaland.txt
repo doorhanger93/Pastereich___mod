@@ -4,7 +4,7 @@ state={
 	name="STATE_878"
 
 	history={
-		owner = MAF
+		owner = NGR
 		add_core_of = NGR
 		buildings = {
 			infrastructure = 3

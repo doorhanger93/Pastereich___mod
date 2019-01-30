@@ -9,7 +9,6 @@ state={
 	history={
 		owner = DEH
 		add_core_of = DEH
-		add_claim_by = PRC
 		victory_points = { 5157 1 } #Dehradun
 		buildings = {
 			infrastructure = 3

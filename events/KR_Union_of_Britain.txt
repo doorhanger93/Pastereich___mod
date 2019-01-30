@@ -3566,7 +3566,6 @@ country_event = {
 			NOT = {
 				OR = {
 					is_controlled_by = ENG
-					is_controlled_by = WAL
 					is_controlled_by = SCT
 				}
 			}
@@ -3870,10 +3869,6 @@ country_event = {
 			if = {
 				limit = { SCT = { is_subject_of = ENG } }
 				GBR = { annex_country = { target = SCT transfer_troops = yes } }
-			}
-			if = {
-				limit = { WAL = { is_subject_of = ENG } }
-				GBR = { annex_country = { target = WAL transfer_troops = yes } }
 			}
 			ENG = {
 				GBR = { transfer_technology = yes }
@@ -5467,9 +5462,6 @@ country_event = {
 
 	trigger = {
 		tag = ENG
-		WAL = {
-			is_subject_of = ENG
-		}
 		SCT = {
 			is_subject_of = ENG
 		}
@@ -5483,7 +5475,6 @@ country_event = {
 	option = {
 		name = uob.360.a
 		ai_chance = { factor = 100 }
-		annex_country = { target = WAL transfer_troops = yes }
 		annex_country = { target = SCT transfer_troops = yes }
 		add_political_power = -400
 		add_timed_idea = { idea = ENG_home_rule_broken_idea days = 365 }

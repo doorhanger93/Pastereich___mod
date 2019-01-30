@@ -3,7 +3,6 @@ state={
 	name="STATE_998"
 	history={
 		owner = MAF
-		add_core_of=NGR
 		add_core_of = MAF
 		add_core_of = KAM
 		buildings={

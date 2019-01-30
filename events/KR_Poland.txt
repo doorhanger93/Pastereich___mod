@@ -497,7 +497,7 @@ country_event = { # The Polish election
 			factor = 40
 			modifier = {
 				factor = 0
-				POL = { has_country_flag = POL_PLC }
+				POL = { has_country_flag = POL_POL }
 			}
 		}
 		if = {
@@ -1836,7 +1836,7 @@ country_event = { # Choosing the King - Influence for Olbracht
 	}
 }
 
-country_event = { # Choosing the King - PLC Formation
+country_event = { # Choosing the King - POL Formation
 	id = poland.35
 	immediate = {log = "[GetDateText]: [Root.GetName]: event poland.35"}
 	title = poland.35.t
@@ -2015,51 +2015,39 @@ country_event = { # The decision of Mendog
 
 		LIT = {
 			random_owned_controlled_state = {
-				PLC = { transfer_state = PREV }
+				POL = { transfer_state = PREV }
 			}
 		}
-		PLC = {	change_tag_from = POL }
 		LIT = {
-			PLC = {
+			POL = {
 				transfer_technology = yes
 			}
 			every_unit_leader = {
 				set_unit_leader_flag = LIT_leader
-				set_nationality = PLC
+				set_nationality = POL
 			}
 		}
 		annex_country = { target = LIT transfer_troops = yes }
 		change_tag_from = LIT
-		POL = {
-			PLC = {
-				transfer_technology = yes
-			}
-			every_unit_leader = {
-				set_unit_leader_flag = POL_leader
-				set_nationality = PLC
-			}
-		}
 		every_state = {
-			limit = { OR = { is_core_of = POL is_core_of = LIT } }
-
-			add_core_of = PLC
+			limit = { is_core_of = LIT }
+			add_core_of = POL
 		}
 
-		PLC = { annex_country = { target = POL transfer_troops = yes } }
-		PLC = { country_event = { days = 1 id = plcommon.69 }}
-		GER = { add_to_faction = PLC }
-		PLC = { add_opinion_modifier = { target = GER modifier = PLC_JOIN_MITT_GER } }# 200
+		POL = { country_event = { days = 1 id = plcommon.69 }}
+		GER = { add_to_faction = POL }
+		POL = { add_opinion_modifier = { target = GER modifier = PLC_JOIN_MITT_GER } }# 200
 
 		every_country = {
 			limit = {
 				is_in_faction_with = GER
 				NOT = { tag = GER }
-				NOT = { tag = PLC }
+				NOT = { tag = POL }
 			}
 
-			add_opinion_modifier = { target = PLC modifier = PLC_JOIN_MITT } # 150
+			add_opinion_modifier = { target = POL modifier = PLC_JOIN_MITT } # 150
 		}
-		PLC = { set_country_flag = PLC_Balanced }
+		POL = { set_country_flag = PLC_Balanced }
 
 		hidden_effect = {
 			random_other_country = { news_event = { id = worldnews.23 } }
@@ -5040,7 +5028,7 @@ country_event = { # Ukrainian partisans in Eastern Galicia
 				}
 			}
 			AND = {
-				PLC = {
+				POL = {
 					controls_state = 91
 					controls_state = 80
 					controls_state = 89
@@ -5073,7 +5061,7 @@ country_event = { # Ukrainian partisans in Eastern Galicia
 
 		add_political_power = -200
 		add_opinion_modifier = { target = POL modifier = UKR_PARTISANS_IGNORED } # 35
-		add_opinion_modifier = { target = PLC modifier = UKR_PARTISANS_IGNORED } # 35
+		add_opinion_modifier = { target = POL modifier = UKR_PARTISANS_IGNORED } # 35
 		set_global_flag = ukr_partisans_ignored
 
 	}
@@ -5086,7 +5074,7 @@ country_event = { # Ukrainian partisans in Eastern Galicia
 		add_timed_idea = { idea = Funding_UKR_Partisans days = 120 }
 		add_manpower = -10000
 		add_opinion_modifier = { target = POL modifier = UKR_PARTISANS_SUPPORTED } # -50
-		add_opinion_modifier = { target = PLC modifier = UKR_PARTISANS_SUPPORTED } # -50
+		add_opinion_modifier = { target = POL modifier = UKR_PARTISANS_SUPPORTED } # -50
 		set_global_flag = POL_UKRAINIANTERROR
 	}
 }
@@ -5101,10 +5089,7 @@ country_event = { # Ukrainian partisans in Eastern Galicia
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = POL
-			tag = PLC
-		}
+		tag = POL
 		date > 1937.4.13
 		has_global_flag = POL_UKRAINIANTERROR
 		controls_state = 91
@@ -5134,10 +5119,7 @@ country_event = { # Operation Vistula
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = POL
-			tag = PLC
-		}
+		tag = POL
 		date > 1937.4.13
 		has_global_flag = POL_UKRAINIANTERROR
 		controls_state = 91
@@ -5179,10 +5161,7 @@ country_event = { # Operation Vistula
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = POL
-			tag = PLC
-		}
+		tag = POL
 		date > 1937.4.13
 		has_global_flag = POL_UKRAINIANTERROR
 		has_global_flag = NO_OP_VISTULA
@@ -5224,10 +5203,7 @@ country_event = { # Terrorist attack
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = POL
-			tag = PLC
-		}
+		tag = POL
 		date > 1940.4.13
 		has_global_flag = POL_UKRAINIANTERROR
 		controls_state = 91
@@ -5256,10 +5232,7 @@ country_event = { # Terrorist attack
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = POL
-			tag = PLC
-		}
+		tag = POL
 		date > 1940.4.13
 		has_global_flag = POL_UKRAINIANTERROR
 		controls_state = 91
@@ -5288,10 +5261,7 @@ country_event = { # Terrorist attack
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = POL
-			tag = PLC
-		}
+		tag = POL
 		NOT = { country_exists = UKR }
 		controls_state = 202
 		controls_state = 201
@@ -6794,7 +6764,7 @@ country_event = { # Revising the Polish-Romanian Border
 				}
 			}
 			AND = {
-				PLC = {
+				POL = {
 					controls_state = 80
 					owns_state = 80
 					is_subject = no
@@ -6811,22 +6781,7 @@ country_event = { # Revising the Polish-Romanian Border
 	option = {
 		name = poland.117.a
 		ai_chance = { factor = 70 }
-
-		if = {
-			limit = {
-				tag = POL
-			}
-
-			POL = { country_event = { days = 1 id = poland.118 }}
-		}
-
-		if = {
-			limit = {
-				tag = PLC
-			}
-
-			PLC = { country_event = { days = 1 id = poland.119 }}
-		}
+		POL = { country_event = { days = 1 id = poland.118 }}
 	}
 
 	option = {
@@ -6954,10 +6909,10 @@ country_event = { # Polish-Romanian Border Revision
 
 		if = {
 			limit = {
-				PLC = { exists = yes }
+				POL = { exists = yes }
 			}
 
-			add_opinion_modifier = { target = PLC modifier = POL_ROM_BORDER_REV } # 50
+			add_opinion_modifier = { target = POL modifier = POL_ROM_BORDER_REV } # 50
 		}
 	}
 }
@@ -6989,10 +6944,10 @@ country_event = { # Polish-Romanian Border Revision
 
 		if = {
 			limit = {
-				PLC = { exists = yes }
+				POL = { exists = yes }
 			}
 
-			add_opinion_modifier = { target = PLC modifier = POL_ROM_BORDER_REV } # 50
+			add_opinion_modifier = { target = POL modifier = POL_ROM_BORDER_REV } # 50
 		}
 	}
 }
@@ -7022,10 +6977,10 @@ country_event = { # Polish-Romanian Border Revision - Poland Refuses
 
 		if = {
 			limit = {
-				PLC = { exists = yes }
+				POL = { exists = yes }
 			}
 
-			add_opinion_modifier = { target = PLC modifier = POL_ROM_BORDER_REV_REF } # -50
+			add_opinion_modifier = { target = POL modifier = POL_ROM_BORDER_REV_REF } # -50
 		}
 	}
 }
@@ -8822,10 +8777,7 @@ country_event = { # Death of Josef Pilsudski
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = POL
-			tag = PLC
-		}
+		tag = POL
 		date > 1937.1.1
 	}
 
@@ -9186,10 +9138,7 @@ country_event = { # Galician Intervention
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = POL
-			tag = PLC
-		}
+		tag = POL
 		NOT = {has_completed_focus = POL_seize_galicia}
 		OR = {
 			has_global_flag = POL_SYNDIE
@@ -9400,10 +9349,7 @@ country_event = { # Signing the Pacta Conventa
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = POL
-			tag = PLC
-		}
+		tag = POL
 		OR = {
 			has_global_flag = POL_WE
 			has_global_flag = POL_HA
@@ -9456,16 +9402,8 @@ country_event = { # Fate of the Royal Palace
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			AND = {
-				tag = POL
-				has_global_flag = POL_SYNDIE
-			}
-			AND = {
-				tag = PLC
-				has_country_flag = PLC_chose_syndicalist
-			}
-		}
+		tag = POL
+		has_global_flag = POL_SYNDIE
 	}
 
 	mean_time_to_happen = {
@@ -9798,10 +9736,7 @@ country_event = { # Expansion of Polskie Radio S.A. - Raszyn
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = POL
-			tag = PLC
-		}
+		tag = POL
 		date > 1936.12.1
 	}
 
@@ -9825,10 +9760,7 @@ country_event = { # Expansion of Polskie Radio S.A. - Warsaw II
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = POL
-			tag = PLC
-		}
+		tag = POL
 		date > 1937.5.1
 	}
 
@@ -9952,10 +9884,7 @@ country_event = { ## War wid Germany
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = POL
-			tag = PLC
-		}
+		tag = POL
 		has_war_with = GER
 	}
 

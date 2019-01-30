@@ -138,7 +138,7 @@ SQI_ARM_01 = {
 SQI_PAR_01 = {
 	name = "Paratrooper Unit"
 
-	for_countries = { SQI PRC SHX GXC YUN XSM SIK }
+	for_countries = { SQI SHX GXC YUN XSM SIK }
 
 	can_use = { always = yes }
 
@@ -159,7 +159,7 @@ SQI_PAR_01 = {
 SQI_MAR_01 = {
 	name = "Marine Unit"
 
-	for_countries = { SQI PRC SHX GXC YUN XSM SIK }
+	for_countries = { SQI SHX GXC YUN XSM SIK }
 
 	can_use = { always = yes }
 

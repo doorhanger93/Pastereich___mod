@@ -95,7 +95,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "ruling_party_info"
 			position = { x = 88 y = 305 }
-			size = { width = 175 height = 60 }
+			size = { width = 200 height = 60 }
 			clipping = no
 					
 #			instantTextboxType = {
@@ -118,7 +118,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "elections"
-				position = { x = 9 y = 32 }
+				position = { x = 9 y = 45 }
 				font = "hoi_16mbs"
 				text = "elections"
 				maxWidth = 155
@@ -389,8 +389,8 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "ideas"
-			position = { x = 0 y = 471 }
-			size = { width=100%% height=95%% }
+			position = { x = 0 y = 500 }
+			size = { width=100%% height=100%% }
 			verticalScrollbar = "right_vertical_slider"
 			margin = { top = 14 bottom = 13}
 		
@@ -515,7 +515,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
-		size = { width=730 height=100%% }
+		size = { width=740 height=100%% }
 		show_sound = open_sub_window
 		
 		background = {
@@ -568,7 +568,7 @@ guiTypes = {
 					name = "box"
 					position = { x = 10 y = 10 }
 					size = { width = 500 height = 1 }
-					slotsize = { width = 231 height = 131 }
+					slotsize = { width = 231 height = 145 }
 					max_slots_horizontal = 3
 					add_horizontal = yes
 					format = "UPPER_LEFT"
@@ -678,7 +678,7 @@ guiTypes = {
 			
 		iconType = {
 			name = "icon"
-			position = { x = 43 y = 78 }
+			position = { x = 42 y = 80 }
 			spriteType = "GFX_placeholder_bordered"
 			centerposition = yes
 			alwaystransparent = yes
@@ -716,12 +716,12 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "cost"
-			position = { x = 15 y = 108 }
+			position = { x = -90 y = 110 }
 			font = "hoi_16mbs"
 			text = ""
 			maxWidth = 142
 			maxHeight = 10
-			format = left
+			format = right
 			alwaystransparent = yes
 		}
 	}

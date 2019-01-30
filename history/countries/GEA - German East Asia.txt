@@ -95,6 +95,9 @@ country_event = {
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 0
 		}

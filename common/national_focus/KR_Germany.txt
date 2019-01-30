@@ -748,19 +748,8 @@ focus_tree = {
 						is_in_faction_with = GER
 					}
 				}
-				PLC = {
-					is_in_faction = yes
-					NOT = {
-						is_in_faction_with = GER
-					}
-				}
-				AND = {
-					NOT = {
-						country_exists = POL
-					}
-					NOT = {
-						country_exists = PLC
-					}
+				NOT = {
+					country_exists = POL
 				}
 			}
 		}
@@ -777,78 +766,28 @@ focus_tree = {
 			NOT = {
 				has_war_with = POL
 			}
-			NOT = {
-				has_war_with = PLC
-			}
 			OR = {
-				AND = {
-					POL = {
-						is_in_faction_with = GER
-					}
-					PLC = {
-						exists = no
-					}
+				POL = {
+					is_in_faction_with = GER
 				}
-				AND = {
-					POL = {
-						is_in_faction = no
-					}
-					PLC = {
-						exists = no
-					}
-				}
-				AND = {
-					PLC = {
-						is_in_faction_with = GER
-					}
-					POL = {
-						exists = no
-					}
-				}
-				AND = {
-					PLC = {
-						is_in_faction = no
-					}
-					POL = {
-						exists = no
-					}
+				POL = {
+					is_in_faction = no
 				}
 			}
 		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_schacht3"
-			if = {
-				limit = {
-					PLC = {
-						exists = yes
-					}
-				}
-				reverse_add_opinion_modifier = {
-					target = PLC
-					modifier = polish_deal_op
-				}
-				add_opinion_modifier = {
-					target = PLC
-					modifier = polish_deal_op
-				}
-				PLC = {
-					country_event = gerfor.168
-				}
-
-				else = {
-					reverse_add_opinion_modifier = {
-						target = POL
-						modifier = polish_deal_op
-					}
-					add_opinion_modifier = {
-						target = POL
-						modifier = polish_deal_op
-					}
-					POL = {
-						country_event = gerfor.168
-					}
-				}
+			reverse_add_opinion_modifier = {
+				target = POL
+				modifier = polish_deal_op
+			}
+			add_opinion_modifier = {
+				target = POL
+				modifier = polish_deal_op
+			}
+			POL = {
+				country_event = gerfor.168
 			}
 			country_event = gerfor.167
 		}
@@ -4685,26 +4624,14 @@ focus_tree = {
 		cost = 5
 		available = {
 			is_subject = no
-			PLC = {
-				NOT = {
-					is_in_faction_with = GER
-					is_in_faction_with = AUS
-				}
-			}
 			POL = {
 				NOT = {
 					is_in_faction_with = GER
 					is_in_faction_with = AUS
 				}
 			}
-
-			OR = {
-				POL = {
-					controls_state = 98
-				}
-				PLC = {
-					controls_state = 98
-				}
+			POL = {
+				controls_state = 98
 			}
 		}
 		bypass = {
@@ -4733,19 +4660,6 @@ focus_tree = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					PLC = {
-						exists = yes
-					}
-				}
-				PLC = {
-					country_event = {
-						id = gerfor.169
-						days = 2
-					}
-				}
-			}
 		}
 	}
 
@@ -4763,13 +4677,8 @@ focus_tree = {
 			focus = GER_poland_strip_for_me_baby
 		}
 		bypass = {
-			OR = {
-				POL = {
-					is_in_faction_with = GER
-				}
-				PLC = {
-					is_in_faction_with = GER
-				}
+			POL = {
+				is_in_faction_with = GER
 			}
 		}
 		x = 8
@@ -4778,19 +4687,11 @@ focus_tree = {
 		cost = 5
 		available = {
 			is_subject = no
-			OR = {
-				PLC = {
-					exists = yes
-					is_in_faction = no
-					not_has_socialist_government = yes
-					has_war = no
-				}
-				POL = {
-					exists = yes
-					is_in_faction = no
-					not_has_socialist_government = yes
-					has_war = no
-				}
+			POL = {
+				exists = yes
+				is_in_faction = no
+				not_has_socialist_government = yes
+				has_war = no
 			}
 		}
 
@@ -4807,19 +4708,6 @@ focus_tree = {
 					}
 				}
 				POL = {
-					country_event = {
-						days = 2
-						id = gerfor.181
-					}
-				}
-			}
-			if = {
-				limit = {
-					PLC = {
-						exists = yes
-					}
-				}
-				PLC = {
 					country_event = {
 						days = 2
 						id = gerfor.181
@@ -4849,15 +4737,11 @@ focus_tree = {
 							has_completed_focus = POL_opportunism
 						}
 					}
-					PLC = {
-						has_socialist_government = yes
-					}
 					has_completed_focus = GER_poland_alliance
 				}
 				has_country_flag = poland_refused_demands
 			}
 			POL = { NOT = { is_in_faction_with = AUS } }
-			PLC = { NOT = { is_in_faction_with = AUS } }
 			is_subject = no
 		}
 		bypass = {
@@ -4865,13 +4749,7 @@ focus_tree = {
 				POL = {
 					is_in_faction_with = GER
 				}
-				PLC = {
-					is_in_faction_with = GER
-				}
 				POL = {
-					is_subject_of = GER
-				}
-				PLC = {
 					is_subject_of = GER
 				}
 			}
@@ -4896,15 +4774,10 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					OR = {
-						POL = {
-							OR = {
-								has_socialist_government = yes
-								has_completed_focus = POL_opportunism
-							}
-						}
-						PLC = {
+					POL = {
+						OR = {
 							has_socialist_government = yes
+							has_completed_focus = POL_opportunism
 						}
 					}
 				}
@@ -4920,18 +4793,6 @@ focus_tree = {
 						target = POL
 					}
 				}
-				if = {
-					limit = {
-						has_completed_focus = GER_poland_strip_for_me_baby
-						PLC = {
-							exists = yes
-						}
-					}
-					create_wargoal = {
-						type = annex_everything
-						target = PLC
-					}
-				}
 				else = {
 					if = {
 						limit = {
@@ -4945,16 +4806,6 @@ focus_tree = {
 					}
 					if = {
 						limit = {
-							PLC = { exists = yes }
-							has_country_flag = GER_POL_refused_alliance
-						}
-						create_wargoal = {
-							type = annex_everything
-							target = PLC
-						}
-					}
-					if = {
-						limit = {
 							has_completed_focus = GER_poland_alliance
 							NOT = { has_country_flag = GER_POL_refused_alliance }
 							POL = {	exists = yes }
@@ -4963,19 +4814,6 @@ focus_tree = {
 							country_event = {
 								days = 2
 								id = gerfor.174
-							}
-						}
-					}
-					if = {
-						limit = {
-							has_completed_focus = GER_poland_alliance
-							NOT = { has_country_flag = GER_POL_refused_alliance }
-							PLC = {	exists = yes }
-						}
-						PLC = {
-							country_event = {
-								days = 2
-								id = gerfor.177
 							}
 						}
 					}

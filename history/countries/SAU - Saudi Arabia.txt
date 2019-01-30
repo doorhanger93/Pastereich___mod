@@ -25,6 +25,9 @@ country_event = { id = saud.1 days = 30 } #startup event
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 0
 		}

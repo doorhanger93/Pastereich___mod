@@ -3030,9 +3030,6 @@ focus_tree = {
 				CZE = {
 					is_subject_of = AUS
 				}
-				GAL = {
-					is_subject_of = AUS
-				}
 				CRO = {
 					is_subject_of = AUS
 				}
@@ -3136,9 +3133,6 @@ focus_tree = {
 			is_subject = no
 			OR = {
 				CZE = {
-					is_subject_of = AUS
-				}
-				GAL = {
 					is_subject_of = AUS
 				}
 				CRO = {
@@ -4511,9 +4505,6 @@ focus_tree = {
 		available = {
 			OR = {
 				owns_state = 89
-				GAL = {
-					has_idea = AUS_part_of_the_Empire
-				}
 			}
 		}
 

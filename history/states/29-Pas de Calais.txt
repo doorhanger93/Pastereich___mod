@@ -4,20 +4,17 @@ state={
 	name="STATE_29"
 
 	history={
-		owner = BEL
-		add_core_of = BEL
+		owner = FRA
 		add_core_of = FRA
+		add_claim_by = NFA
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 1
-
 		}
 		victory_points = {
 			11483 10 
 		}
-
 	}
-
 	provinces={
 		11483 11606 
 	}

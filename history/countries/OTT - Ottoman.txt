@@ -99,6 +99,9 @@ add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 15 producer =
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 0
 		}

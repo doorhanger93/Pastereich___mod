@@ -4,8 +4,8 @@ state={
 	name="STATE_80"
 
 	history={
-		owner = GAL
-		add_core_of = GAL
+		owner = UKR
+		add_core_of = UKR
 		add_core_of = ROM
 		buildings = {
 			infrastructure = 6

@@ -1,0 +1,25 @@
+state = {
+	id = 1305
+	name = "STATE_1305"
+	manpower = 236700
+
+	state_category = pastoral
+
+	history = {
+		owner = SRI
+		add_core_of = SRI
+		buildings = {
+			infrastructure = 8
+			6862 = {
+				bunker = 2
+			}
+			14903 = {
+				bunker = 2
+			}
+		}
+	}
+
+	provinces = {
+		6862 14903
+	}
+}

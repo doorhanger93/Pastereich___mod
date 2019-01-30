@@ -1,6 +1,63 @@
 ideas = {
 	country = {
 		# Start
+		ENG_republic_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_republic_idea"}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.15
+				war_support_factor = -0.30
+				army_morale_factor = -0.1
+				conscription = -0.01
+			}
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus
+		}
+		ENG_monoff_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_monoff_idea"}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_Factor = -0.15
+				army_morale_factor = -0.1
+				planning_speed = -0.2
+			}
+			removal_cost = -1
+			picture = EGY_retired_brits
+		}
+		ENG_econ_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_econ_idea"}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = -0.10
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				production_factory_efficiency_gain_factor = -0.10
+			}
+			removal_cost = -1
+			picture = state_economy
+		}
+		ENG_engire_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_engire_idea"}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.02
+				industrial_capacity_dockyard = 0.02
+				research_time_factor = -0.05
+			}
+			removal_cost = -1
+			picture = ENG_IRE_friends
+		}		
 		ENG_militia_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ENG_militia_idea"}
 			allowed = {

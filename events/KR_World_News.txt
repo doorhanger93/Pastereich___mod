@@ -822,7 +822,7 @@ news_event = {
 	}
 
 	show_major = {
-		NOT = { tag = PLC }
+		NOT = { tag = POL }
 		regional_europe_news = yes
 	}
 

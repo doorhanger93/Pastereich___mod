@@ -80,13 +80,18 @@ set_technology = {
 
 add_ideas = {
 	#medium_economy
-
+	limited_exports
+	ENG_republic_idea
+	ENG_monoff_idea
+	ENG_econ_idea
+	ENG_engire_idea
 	ENG_Arthur_Horner_hog_syn
 	ENG_Niclas_y_Glais_for_rso
 	ENG_Oswald_Mosley_eco_tot
 	ENG_Helen_Crawfurd_sec_rso
 }
 
+add_opinion_modifier = { target = IRE modifier = ENG_IRE_friends }
 add_opinion_modifier = { target = GER modifier = embargo }
 add_opinion_modifier = { target = CAN modifier = embargo }
 add_opinion_modifier = { target = AST modifier = embargo }
@@ -113,8 +118,11 @@ set_convoys = 200
 set_politics = {
 
 	parties = {
-		totalist = {
+		marxist = {
 			popularity = 5
+		}
+		totalist = {
+			popularity = 0
 		}
 		syndicalist = {
 			popularity = 2
@@ -160,27 +168,26 @@ create_country_leader = {# Oswald Mosley
 	ideology = totalist_subtype
 	traits = { }
 }
-create_country_leader = {# Niclas Y Glais
-	name = "Ramsay MacDonald"
-	desc = "POLITICS_RAMSAY_MACDONALD_DESC"
-	picture = "Portrait_England_Ramsay_MacDonald.tga"
+create_country_leader = {# Oswald Mosley
+	name = "Oswald Mosley"
+	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+	picture = "Portrait_England_Oswald_Mosley.tga"
 	expire = "1965.1.1"
 	ideology = radical_socialist_subtype
 	traits = { }
 }
-# Put Horner here so we can retire Snowden as head of the Syndicalists even if Glais or Mosley win
 create_country_leader = {
-	name = "Arthur Horner"
-	desc = "POLITICS_ARTHUR_HORNER_DESC"
-	picture = "Portrait_England_Arthur_Horner.tga"
+	name = "Oswald Mosley"
+	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+	picture = "Portrait_England_Oswald_Mosley.tga"
 	expire = "1965.1.1"
 	ideology = syndicalist_subtype
 	traits = { }
 }
-create_country_leader = {# Philip Snowden
-	name = "Philip Snowden"
-	desc = "POLITICS_PHILIP_SNOWDEN_DESC"
-	picture = "Portrait_England_Philip_Snowden.tga"
+create_country_leader = {
+	name = "Oswald Mosley"
+	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+	picture = "Portrait_England_Oswald_Mosley.tga"
 	expire = "1965.1.1"
 	ideology = syndicalist_subtype
 	traits = {

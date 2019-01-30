@@ -8,8 +8,8 @@ state={
 	}
 	
 	history={
-		owner = PER
-		add_core_of = PER
+		owner = SAU
+		add_core_of = SAU
 		buildings={
 			infrastructure=3
 			13552={

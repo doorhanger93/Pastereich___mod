@@ -102,6 +102,9 @@ add_equipment_to_stockpile = {
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 0
 			banned = yes

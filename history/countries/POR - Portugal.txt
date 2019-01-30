@@ -45,6 +45,9 @@ country_event = { id = por.4 days = 1 }
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}	
 		totalist = {
 			popularity = 0
 		}

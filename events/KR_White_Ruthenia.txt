@@ -524,10 +524,7 @@ country_event = { # The fate of White Ruthenia
 
 		trigger = {
 			owns_state = 94
-			OR = {
-				is_in_faction_with = PLC
-				is_in_faction_with = POL
-			}
+			is_in_faction_with = POL
 		}
 
 		ai_chance = { factor = 50 }
@@ -542,15 +539,6 @@ country_event = { # The fate of White Ruthenia
 			}
 		}
 
-		if = {
-			limit = {
-				is_in_faction_with = PLC
-			}
-			PLC = {
-				transfer_state = 94
-				country_event = { days = 2 id = whiteruthenia.22 }
-			}
-		}
 
 		GER = { country_event = whiteruthenia.23 }
 	}
@@ -623,12 +611,12 @@ country_event = { # Given away half, what now? - GER
 	option = {
 		name = whiteruthenia.23.b
 		trigger = {
-			is_in_faction_with = PLC
+			is_in_faction_with = POL
 		}
 
 		ai_chance = { factor = 10 }
 
-		PLC = { country_event = { id = whiteruthenia.28 } }
+		POL = { country_event = { id = whiteruthenia.28 } }
 	}
 
 	option = {
@@ -859,7 +847,7 @@ country_event = { # Germany grants us control over White Ruthenia
 					is_claimed_by = GER
 				}
 			}
-			PLC = {
+			POL = {
 				transfer_state = PREV
 			}
 		}

@@ -57,6 +57,9 @@ set_variable = { arg_im_factor = 100 }
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 0
 		}

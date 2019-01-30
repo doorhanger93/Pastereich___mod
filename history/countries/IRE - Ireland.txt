@@ -1,4 +1,4 @@
-﻿capital = 113
+﻿capital = 1068
 oob = "IRE"
 set_convoys = 30
 set_stability = 0.5
@@ -44,6 +44,8 @@ set_technology = {
 
 set_research_slots = 3
 
+add_opinion_modifier = { target = ENG modifier = ENG_IRE_friends }
+
 add_ideas = {
 	#medium_economy
 	IRE_Eoin_O'Duffy_hog_pau
@@ -51,6 +53,7 @@ add_ideas = {
 	IRE_Ernest_Blythe_eco_ade
 	IRE_Gearoid_O_Cuinnegain_sec_pau
 	IRE_DEFENCE
+	IRE_ENG_friends
 	limited_conscription
 	#ZO_idea
 }
@@ -67,20 +70,23 @@ set_country_flag = {
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 3
 		}
 		radical_socialist = {
-			popularity = 5
+			popularity = 11
 		}
 		syndicalist = {
 			popularity = 10
 		}
 		social_democrat = {
-			popularity = 5
+			popularity = 15
 		}
 		social_liberal = {
-			popularity = 3
+			popularity = 24
 		}
 		market_liberal = {
 			popularity = 3
@@ -89,17 +95,17 @@ set_politics = {
 			popularity = 13
 		}
 		authoritarian_democrat = {
-			popularity = 46
+			popularity = 5
 		}
 		paternal_autocrat = {
 			popularity = 7
 		}
 		national_populist = {
-			popularity = 5
+			popularity = 4
 		}
 	}
 
-	ruling_party = authoritarian_democrat
+	ruling_party = social_liberal
 	last_election = "1888.15.6"
 	election_frequency = 48
 	elections_allowed = no
@@ -111,7 +117,7 @@ create_country_leader = {
 	desc = "POLITICS_MICHAEL_COLLINS_DESC"
 	picture = "Portrait_Ireland_Michael_Collins.tga"
 	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
+	ideology = social_liberal_subtype
 	traits = {
 
 	}
@@ -199,7 +205,7 @@ create_country_leader = {
 	desc = "POLITICS_DE_VALERA_DESC"
 	picture = "Portrait_Ireland_Eamon_de_Valera2.tga"
 	expire = "1965.1.1"
-	ideology = social_liberal_subtype
+	ideology = authoritarian_democrat_subtype
 	traits = {
 
 	}

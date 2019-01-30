@@ -1,4 +1,4 @@
-﻿capital = 438
+﻿capital = 815
 
 oob = "PRF"
 
@@ -48,6 +48,9 @@ add_opinion_modifier = { target = AST modifier = embargo }
 
 set_politics = {
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 2
 		}

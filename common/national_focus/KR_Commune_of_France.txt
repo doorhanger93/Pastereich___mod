@@ -1605,15 +1605,6 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					GAL = { is_subject_of = AUS }
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = GAL
-				}
-			}
-			if = {
-				limit = {
 					TRS = { is_subject_of = AUS }
 				}
 				create_wargoal = {

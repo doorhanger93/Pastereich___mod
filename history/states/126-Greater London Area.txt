@@ -5,6 +5,8 @@ state={
 
 	history={
 		owner = ENG
+		add_core_of = ENG
+		add_core_of = GBR
 		victory_points = {
 			6103 30 
 		}
@@ -17,10 +19,7 @@ state={
 			industrial_complex = 7
 			anti_air_building = 5
 			air_base = 10
-
 		}
-		add_core_of = ENG
-
 	}
 
 	provinces={

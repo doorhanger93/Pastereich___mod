@@ -64,6 +64,9 @@ set_research_slots = 3
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 3
 		}

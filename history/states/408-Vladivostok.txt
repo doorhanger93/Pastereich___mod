@@ -11,6 +11,8 @@ state={
 
 	history={
 		owner = TRM
+		add_core_of = TRM
+		add_claim_by = RUS
 		victory_points = {
 			957 3 # Vladivostok
 		}
@@ -23,10 +25,8 @@ state={
 			957 = {
 				naval_base = 5
 				coastal_bunker = 2
-
 			}
 		}
-		add_core_of = TRM
 	}
 
 	provinces={

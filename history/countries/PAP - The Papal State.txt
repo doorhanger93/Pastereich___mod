@@ -75,6 +75,9 @@ give_guarantee = SIC
 set_politics = {
 
 	parties = {
+		marxist = {
+			popularity = 0
+		}
 		totalist = {
 			popularity = 0
 		}
